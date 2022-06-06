@@ -1,4 +1,4 @@
-﻿namespace Knapcode.AzureRetailPrices;
+﻿namespace Knapcode.AzureRetailPrices.NaturalKeyFinder;
 
 public class DynamicTuple : IEquatable<DynamicTuple>
 {

@@ -1,4 +1,4 @@
-﻿namespace Knapcode.AzureRetailPrices;
+﻿namespace Knapcode.AzureRetailPrices.NaturalKeyFinder;
 
 public static class EnumerableExtensions
 {
@@ -10,9 +10,9 @@ public static class EnumerableExtensions
         T[] data = source.ToArray();
 
         return Enumerable
-          .Range(0, 1 << (data.Length))
+          .Range(0, 1 << data.Length)
           .Select(index => data
-             .Where((v, i) => (index & (1 << i)) != 0)
+             .Where((v, i) => (index & 1 << i) != 0)
              .ToArray());
     }
 

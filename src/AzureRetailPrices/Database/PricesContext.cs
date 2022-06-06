@@ -1,18 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Knapcode.AzureRetailPrices;
+namespace Knapcode.AzureRetailPrices.Database;
 
 public class PricesContext : DbContext
 {
-    public DbSet<ArmRegion> ArmRegions => Set<ArmRegion>();
-    public DbSet<ArmSku> ArmSkus => Set<ArmSku>();
+    public DbSet<Price> Prices => Set<Price>();
 
     public string DbPath { get; }
 
     public PricesContext()
     {
-        var folder = Environment.SpecialFolder.LocalApplicationData;
-        var path = Environment.GetFolderPath(folder);
+        var path = DirectoryHelper.GetRoot();
         DbPath = Path.Join(path, "azure-prices.db");
     }
 

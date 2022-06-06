@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{151F90E3-744
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "src\Sandbox\Sandbox.csproj", "{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{98855748-3C0C-4E44-A3EE-D5697701430A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureRetailPrices.Test", "test\AzureRetailPrices.Test\AzureRetailPrices.Test.csproj", "{4F68A8FC-B468-413D-A0A5-D1320EA38C71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,10 @@ Global
 		{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F68A8FC-B468-413D-A0A5-D1320EA38C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F68A8FC-B468-413D-A0A5-D1320EA38C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F68A8FC-B468-413D-A0A5-D1320EA38C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F68A8FC-B468-413D-A0A5-D1320EA38C71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{C5FA0F7C-DCC7-44EF-9FEA-F33841BDEF2F} = {151F90E3-7443-4A10-A550-B0FCADEBC64F}
 		{DAE6C6BC-5541-4C68-86E3-D0064F6333FF} = {151F90E3-7443-4A10-A550-B0FCADEBC64F}
+		{4F68A8FC-B468-413D-A0A5-D1320EA38C71} = {98855748-3C0C-4E44-A3EE-D5697701430A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {980F7196-0DBF-45EA-ACEC-8BC433DD3289}

@@ -1,17 +1,17 @@
 ﻿using System.Collections.Concurrent;
 using System.Diagnostics;
-using System.Reflection;
-using System.Text.Json;
+using Knapcode.AzureRetailPrices.Client;
+using Knapcode.AzureRetailPrices.Reflection;
 
-namespace Knapcode.AzureRetailPrices;
+namespace Knapcode.AzureRetailPrices.NaturalKeyFinder;
 
-public static class NaturalKeyFinder
+public static class NaturalKeyFinderCommand
 {
     public static async Task RunAsync()
     {
-        var prices = GetPricesFromLatestSnapshot();
+        var prices = DirectoryHelper.GetPricesFromLatestSnapshot();
 
-        var noDuplicates = await GetNaturalKeyCandidates(prices);
+        var noDuplicates = await GetNaturalKeyCandidates(prices.ToList());
 
         var naturalKeys = await FindNaturalKeys(noDuplicates);
 
@@ -21,55 +21,10 @@ public static class NaturalKeyFinder
         }
     }
 
-    private static List<PriceResponse> GetPricesFromLatestSnapshot()
-    {
-        var root = GetRoot();
-
-        var latestSnapshot = Directory.EnumerateDirectories(Path.Combine(root, "snapshot")).OrderByDescending(x => x).Last();
-
-        var pricesFromFile = Directory
-            .EnumerateFiles(latestSnapshot, "page*.json")
-            .Select(x =>
-            {
-                Console.WriteLine("Reading: " + x);
-                return JsonSerializer.Deserialize<PricesResponse>(File.ReadAllText(x));
-            })
-            .SelectMany(x => x!.Items)
-            .ToList();
-        return pricesFromFile;
-    }
-
-    private static string GetRoot()
-    {
-        var root = Directory.GetCurrentDirectory();
-        while (root != null)
-        {
-            var markerFile = Directory.EnumerateFiles(root, "AzureRetailPrices.sln");
-            if (markerFile.Any())
-            {
-                break;
-            }
-
-            root = Path.GetDirectoryName(root);
-        }
-
-        if (root == null)
-        {
-            throw new InvalidOperationException("Could not find the repository root.");
-        }
-
-        return root;
-    }
-
     private static async Task<ConcurrentBag<HashSet<string>>> GetNaturalKeyCandidates(List<PriceResponse> pricesFromFile)
     {
         var noDuplicates = new ConcurrentBag<HashSet<string>>();
-
-        var propertyNameToGetValue = typeof(PriceResponse)
-            .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty)
-            .ToDictionary<PropertyInfo, string, Func<PriceResponse, object?>>(
-                x => x.Name,
-                x => y => PropertyCallAdapterProvider<PriceResponse>.GetInstance(x.Name).InvokeGet(y));
+        var propertyNameToGetValue = ReflectionHelper.GetPropertyNameToGetValue<PriceResponse>();
 
         var excludedFromKeys = new[]
         {

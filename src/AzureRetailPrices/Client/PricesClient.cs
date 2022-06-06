@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.OData.Client;
 
-namespace Knapcode.AzureRetailPrices;
+namespace Knapcode.AzureRetailPrices.Client;
 
 public class PricesClient
 {

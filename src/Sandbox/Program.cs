@@ -1,10 +1,14 @@
-﻿using System.Collections.Concurrent;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Reflection;
+﻿using System.Net.Http.Headers;
 using System.Text.Json;
-using Knapcode.AzureRetailPrices;
-using Microsoft.EntityFrameworkCore;
+using Knapcode.AzureRetailPrices.Client;
+using Knapcode.AzureRetailPrices.LoadDatabase;
+using Knapcode.AzureRetailPrices.OptionalPropertyFinder;
+using Knapcode.AzureRetailPrices.PropertyRelationshipFinder;
+
+await PropertyRelationshipFinderCommand.RunAsync();
+// LoadDatabaseCommand.Run();
+
+return;
 
 using var httpClient = new HttpClient();
 httpClient.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("AzureMeterIds", "0.0.1"));

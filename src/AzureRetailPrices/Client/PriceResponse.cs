@@ -1,19 +1,19 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Knapcode.AzureRetailPrices;
+namespace Knapcode.AzureRetailPrices.Client;
 
-public class PriceResponse : IPriceFilter
+public class PriceResponse
 {
     [JsonConstructor]
     public PriceResponse(
         string currencyCode,
-        decimal tierMinimumUnits,
-        decimal retailPrice,
-        decimal unitPrice,
+        decimal? tierMinimumUnits,
+        decimal? retailPrice,
+        decimal? unitPrice,
         string armRegionName,
         string location,
-        DateTime effectiveStartDate,
+        DateTime? effectiveStartDate,
         string meterId,
         string meterName,
         string productId,
@@ -25,18 +25,18 @@ public class PriceResponse : IPriceFilter
         string serviceFamily,
         string unitOfMeasure,
         string priceType,
-        bool isPrimaryMeterRegion,
+        bool? isPrimaryMeterRegion,
         string armSkuName,
         string? reservationTerm,
         DateTime? effectiveEndDate)
     {
         CurrencyCode = currencyCode ?? throw new ArgumentNullException(nameof(currencyCode));
-        TierMinimumUnits = tierMinimumUnits;
-        RetailPrice = retailPrice;
-        UnitPrice = unitPrice;
+        TierMinimumUnits = tierMinimumUnits ?? throw new ArgumentNullException(nameof(tierMinimumUnits));
+        RetailPrice = retailPrice ?? throw new ArgumentNullException(nameof(retailPrice));
+        UnitPrice = unitPrice ?? throw new ArgumentNullException(nameof(unitPrice));
         ArmRegionName = armRegionName ?? throw new ArgumentNullException(nameof(armRegionName));
         Location = location ?? throw new ArgumentNullException(nameof(location));
-        EffectiveStartDate = effectiveStartDate;
+        EffectiveStartDate = effectiveStartDate ?? throw new ArgumentNullException(nameof(effectiveStartDate));
         MeterId = meterId ?? throw new ArgumentNullException(nameof(meterId));
         MeterName = meterName ?? throw new ArgumentNullException(nameof(meterName));
         ProductId = productId ?? throw new ArgumentNullException(nameof(productId));
@@ -48,7 +48,7 @@ public class PriceResponse : IPriceFilter
         ServiceFamily = serviceFamily ?? throw new ArgumentNullException(nameof(serviceFamily));
         UnitOfMeasure = unitOfMeasure ?? throw new ArgumentNullException(nameof(unitOfMeasure));
         PriceType = priceType ?? throw new ArgumentNullException(nameof(priceType));
-        IsPrimaryMeterRegion = isPrimaryMeterRegion;
+        IsPrimaryMeterRegion = isPrimaryMeterRegion ?? throw new ArgumentNullException(nameof(isPrimaryMeterRegion));
         ArmSkuName = armSkuName ?? throw new ArgumentNullException(nameof(armSkuName));
         ReservationTerm = reservationTerm;
         EffectiveEndDate = effectiveEndDate;
@@ -58,13 +58,13 @@ public class PriceResponse : IPriceFilter
     public string CurrencyCode { get; set; }
 
     [JsonPropertyName("tierMinimumUnits")]
-    public decimal TierMinimumUnits { get; set; }
+    public decimal? TierMinimumUnits { get; set; }
 
     [JsonPropertyName("retailPrice")]
-    public decimal RetailPrice { get; set; }
+    public decimal? RetailPrice { get; set; }
 
     [JsonPropertyName("unitPrice")]
-    public decimal UnitPrice { get; set; }
+    public decimal? UnitPrice { get; set; }
 
     [JsonPropertyName("armRegionName")]
     public string ArmRegionName { get; set; }
@@ -73,7 +73,7 @@ public class PriceResponse : IPriceFilter
     public string Location { get; set; }
 
     [JsonPropertyName("effectiveStartDate")]
-    public DateTime EffectiveStartDate { get; set; }
+    public DateTime? EffectiveStartDate { get; set; }
 
     [JsonPropertyName("meterId")]
     public string MeterId { get; set; }
@@ -109,7 +109,7 @@ public class PriceResponse : IPriceFilter
     public string PriceType { get; set; }
 
     [JsonPropertyName("isPrimaryMeterRegion")]
-    public bool IsPrimaryMeterRegion { get; set; }
+    public bool? IsPrimaryMeterRegion { get; set; }
 
     [JsonPropertyName("armSkuName")]
     public string ArmSkuName { get; set; }

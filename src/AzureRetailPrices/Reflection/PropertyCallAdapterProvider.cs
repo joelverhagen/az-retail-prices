@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace Knapcode.AzureRetailPrices;
+namespace Knapcode.AzureRetailPrices.Reflection;
 
 /// <summary>
 /// Source: https://stackoverflow.com/a/26733318
