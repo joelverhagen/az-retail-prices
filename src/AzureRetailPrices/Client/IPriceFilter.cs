@@ -1,4 +1,6 @@
-﻿public interface IPriceFilter
+﻿namespace Knapcode.AzureRetailPrices;
+
+public interface IPriceFilter
 {
     string? ArmRegionName { get; }
     string? ArmSkuName { get; }

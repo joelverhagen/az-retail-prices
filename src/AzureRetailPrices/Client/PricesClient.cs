@@ -1,7 +1,8 @@
-﻿using System;
-using System.Text.Json;
+﻿using System.Text.Json;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.OData.Client;
+
+namespace Knapcode.AzureRetailPrices;
 
 public class PricesClient
 {
@@ -43,9 +44,9 @@ public class PricesClient
         var baseUrl = "https://prices.azure.com/api/retail/prices";
 
         var queryString = new SortedDictionary<string, string>
-        {
-            { "api-version", "2021-10-01-preview" },
-        };
+    {
+        { "api-version", "2021-10-01-preview" },
+    };
 
         if (currencyCode is not null)
         {

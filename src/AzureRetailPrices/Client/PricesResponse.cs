@@ -1,6 +1,8 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
+namespace Knapcode.AzureRetailPrices;
+
 public class PricesResponse
 {
     [JsonConstructor]
