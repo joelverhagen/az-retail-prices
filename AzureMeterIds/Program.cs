@@ -1,14 +1,28 @@
-﻿using System;
+﻿using System.Collections.Concurrent;
 using System.Diagnostics;
-using System.IO;
 using System.Net.Http.Headers;
 using System.Reflection;
-using System.Reflection.Metadata;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
+
+var root = Directory.GetCurrentDirectory();
+while (root != null)
+{
+    var markerFile = Directory.EnumerateFiles(root, "AzureMeterIds.sln");
+    if (markerFile.Any())
+    {
+        break;
+    }
+
+    root = Path.GetDirectoryName(root);
+}
+
+if (root == null)
+{
+    throw new InvalidOperationException("Could not find the repository root.");
+}
+
+var latestSnapshot = Directory.EnumerateDirectories(Path.Combine(root, "snapshot")).OrderByDescending(x => x).Last();
 
 var propertyNameToGetValue = typeof(PriceResponse)
     .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty)
@@ -25,63 +39,135 @@ var excludedFromKeys = new[]
     nameof(PriceResponse.RetailPrice),
     nameof(PriceResponse.CurrencyCode),
 };
-var keyCombinations = Combinations(propertyNameToGetValue.Keys.Except(excludedFromKeys)).ToHashSet();
-var hasDuplicates = new HashSet<string[]>(); // Reference equality is okay here since there is a fixed set of references.
+
+var allKeys = Combinations(propertyNameToGetValue.Keys.Except(excludedFromKeys))
+    .Select(x => new HashSet<string>(x))
+    .OrderBy(x => x.Count)
+    .ToList();
 
 var pricesFromFile = Directory
-    .EnumerateFiles(@"C:\Users\jver\Desktop\page-prices", "page*.json")
+    .EnumerateFiles(latestSnapshot, "page*.json")
     .Select(x =>
     {
         Console.WriteLine(x);
         return JsonSerializer.Deserialize<PricesResponse>(File.ReadAllText(x));
     })
-    .SelectMany(x => x.Items)
+    .SelectMany(x => x!.Items)
     .ToList();
 
-var propertyNamesToValueToPrices = keyCombinations.ToDictionary(x => x, x => new Dictionary<DynamicTuple, List<PriceResponse>>());
-
-for (int i = 0; i < pricesFromFile.Count; i++)
+var duplicateExamples = new ConcurrentDictionary<HashSet<string>, Dictionary<DynamicTuple, List<PriceResponse>>>();
+var noDuplicates = new ConcurrentBag<HashSet<string>>();
+int keysCompleted = 0;
+var workerTask = Task.Run(() =>
 {
-    if (i % 1000 == 0)
-    {
-        Console.WriteLine("Price " + i);
-    }
-
-    PriceResponse? price = pricesFromFile[i];
-    var duplicateFound = false;
-
-    foreach (var keyCombination in keyCombinations)
-    {
-        var values = new object[keyCombination.Length];
-        for (var j = 0; j < values.Length; j++)
+    Parallel.ForEach(
+        allKeys,
+        keys =>
         {
-            values[j] = propertyNameToGetValue[keyCombination[j]](price);
-        }
+            foreach (var noDuplicate in noDuplicates)
+            {
+                if (keys.IsProperSupersetOf(noDuplicate))
+                {
+                    noDuplicates.Add(keys);
+                    return;
+                }
+            }
 
-        var tuple = new DynamicTuple(values);
-        var valueToPrices = propertyNamesToValueToPrices[keyCombination];
+            var valueToPrices = new Dictionary<DynamicTuple, List<PriceResponse>>();
+            var hasDuplicates = false;
+            var keyArray = keys.OrderBy(x => x).ToArray();
 
-        if (!valueToPrices.TryGetValue(tuple, out var duplicates))
-        {
-            duplicates = new List<PriceResponse> { price };
-            valueToPrices.Add(tuple, duplicates);
-        }
-        else
-        {
-            // Console.WriteLine("Duplicates: " + string.Join(" + ", keyCombination));
-            duplicateFound = true;
-            duplicates.Add(price);
-            hasDuplicates.Add(keyCombination);
-        }
-    }
+            foreach (var price in pricesFromFile)
+            {
+                var values = new object[keys.Count];
+                for (var j = 0; j < values.Length; j++)
+                {
+                    values[j] = propertyNameToGetValue[keyArray[j]](price);
+                }
 
-    if (duplicateFound)
-    {
-        keyCombinations.ExceptWith(hasDuplicates);
-    }
+                var tuple = new DynamicTuple(values);
+
+                if (!valueToPrices.TryGetValue(tuple, out var prices))
+                {
+                    prices = new List<PriceResponse> { price };
+                    valueToPrices.Add(tuple, prices);
+                }
+                else
+                {
+                    prices.Add(price);
+                    hasDuplicates = true;
+                    break;
+                }
+            }
+
+            if (hasDuplicates)
+            {
+                duplicateExamples.TryAdd(
+                    keys,
+                    valueToPrices
+                        .OrderByDescending(x => x.Value.Count)
+                        .Take(5)
+                        .ToDictionary(x => x.Key, x => x.Value));
+            }
+            else
+            {
+                noDuplicates.Add(keys);
+            }
+
+            Interlocked.Increment(ref keysCompleted);
+        });
+});
+
+var keysSw = Stopwatch.StartNew();
+while (!workerTask.IsCompleted)
+{
+    Console.WriteLine($"[{keysSw.Elapsed}] Completed: {keysCompleted} / {allKeys.Count}");
+    await Task.Delay(TimeSpan.FromSeconds(1));
 }
 
-Debugger.Launch();
+await workerTask;
+
+Console.WriteLine($"[{keysSw.Elapsed}] Complete.");
+
+var noDuplicatesArray = noDuplicates.ToArray();
+var supersets = new ConcurrentBag<HashSet<string>>();
+var noDuplicatesCompleted = 0;
+var noDuplicatesTask = Task.Run(() =>
+{
+    Parallel.ForEach(
+        noDuplicates,
+        a =>
+        {
+            foreach (var b in noDuplicatesArray)
+            {
+                if (a.IsProperSupersetOf(b))
+                {
+                    supersets.Add(a);
+                }
+            }
+
+            Interlocked.Increment(ref noDuplicatesCompleted);
+        });
+});
+
+var noDuplicatesSw = Stopwatch.StartNew();
+while (!noDuplicatesTask.IsCompleted)
+{
+    Console.WriteLine($"[{noDuplicatesSw.Elapsed}] Completed: {noDuplicatesCompleted} / {noDuplicates.Count}");
+    await Task.Delay(TimeSpan.FromSeconds(1));
+}
+
+await noDuplicatesTask;
+
+Console.WriteLine($"[{noDuplicatesSw.Elapsed}] Complete.");
+
+var noDuplicatsSet = noDuplicates.ToHashSet();
+noDuplicatsSet.ExceptWith(supersets);
+
+foreach (var keys in noDuplicatsSet.OrderBy(x => x.Count))
+{
+    Console.WriteLine(string.Join(" + ", keys.OrderBy(x => x)));
+}
 
 return;
 
@@ -187,34 +273,40 @@ public class PropertyCallAdapterProvider<TThis>
         IPropertyCallAdapter<TThis> instance;
         if (!_instances.TryGetValue(forPropertyName, out instance))
         {
-            var property = typeof(TThis).GetProperty(
-                forPropertyName,
-                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
-
-            MethodInfo getMethod;
-            Delegate getterInvocation = null;
-            if (property != null && (getMethod = property.GetGetMethod(true)) != null)
+            lock (_instances)
             {
-                var openGetterType = typeof(Func<,>);
-                var concreteGetterType = openGetterType
-                    .MakeGenericType(typeof(TThis), property.PropertyType);
+                if (!_instances.TryGetValue(forPropertyName, out instance))
+                {
+                    var property = typeof(TThis).GetProperty(
+                    forPropertyName,
+                    BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic);
 
-                getterInvocation =
-                    Delegate.CreateDelegate(concreteGetterType, null, getMethod);
+                    MethodInfo getMethod;
+                    Delegate getterInvocation = null;
+                    if (property != null && (getMethod = property.GetGetMethod(true)) != null)
+                    {
+                        var openGetterType = typeof(Func<,>);
+                        var concreteGetterType = openGetterType
+                            .MakeGenericType(typeof(TThis), property.PropertyType);
+
+                        getterInvocation =
+                            Delegate.CreateDelegate(concreteGetterType, null, getMethod);
+                    }
+                    else
+                    {
+                        //throw exception or create a default getterInvocation returning null
+                    }
+
+                    var openAdapterType = typeof(PropertyCallAdapter<,>);
+                    var concreteAdapterType = openAdapterType
+                        .MakeGenericType(typeof(TThis), property.PropertyType);
+                    instance = Activator
+                        .CreateInstance(concreteAdapterType, getterInvocation)
+                            as IPropertyCallAdapter<TThis>;
+
+                    _instances.Add(forPropertyName, instance);
+                }
             }
-            else
-            {
-                //throw exception or create a default getterInvocation returning null
-            }
-
-            var openAdapterType = typeof(PropertyCallAdapter<,>);
-            var concreteAdapterType = openAdapterType
-                .MakeGenericType(typeof(TThis), property.PropertyType);
-            instance = Activator
-                .CreateInstance(concreteAdapterType, getterInvocation)
-                    as IPropertyCallAdapter<TThis>;
-
-            _instances.Add(forPropertyName, instance);
         }
 
         return instance;
