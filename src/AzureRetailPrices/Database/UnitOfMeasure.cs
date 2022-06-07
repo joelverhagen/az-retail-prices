@@ -1,7 +1,8 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public class UnitOfMeasure
+public record UnitOfMeasure
 {
-    public int UnitOfMeasureId { get; set; }
-    public string UnitOfMeasureValue { get; set; } = null!;
+    public int Id { get; set; }
+
+    public string Value { get; set; } = null!;
 }

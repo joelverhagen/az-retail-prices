@@ -24,7 +24,7 @@ public static class NaturalKeyFinderCommand
     private static async Task<ConcurrentBag<HashSet<string>>> GetNaturalKeyCandidates(List<PriceResponse> pricesFromFile)
     {
         var noDuplicates = new ConcurrentBag<HashSet<string>>();
-        var propertyNameToGetValue = ReflectionHelper.GetPropertyNameToGetValue<PriceResponse>();
+        var propertyNameToGetValue = ReflectionHelper.GetPropertyNameToGetScalarValue<PriceResponse>();
 
         var excludedFromKeys = new[]
         {

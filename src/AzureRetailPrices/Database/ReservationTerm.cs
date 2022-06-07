@@ -1,7 +1,8 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public class ReservationTerm
+public record ReservationTerm
 {
-    public int ReservationTermId { get; set; }
-    public string ReservationTermValue { get; set; } = null!;
+    public int Id { get; set; }
+
+    public string Value { get; set; } = null!;
 }

@@ -4,8 +4,9 @@ param (
     [int]$Buckets
 )
 
-$dir = Join-Path $PSScriptRoot "snapshot/$((Get-Date).ToUniversalTime().ToString("yyyy-MM-dd"))"
-New-Item $dir -ItemType Directory -Force | Out-Null
+$dir = Join-Path $PSScriptRoot "snapshot"
+Remove-Item $dir -Recurse -Force
+New-Item $dir -ItemType Directory | Out-Null
 
 0..($Buckets - 1) | ForEach-Object {
     Start-Job -ScriptBlock {

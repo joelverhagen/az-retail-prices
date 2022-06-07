@@ -1,14 +1,14 @@
 ﻿using System.Reflection;
-using Knapcode.AzureRetailPrices.Client;
 
 namespace Knapcode.AzureRetailPrices.Reflection;
 
 public static class ReflectionHelper
 {
-    public static Dictionary<string, Func<T, object?>> GetPropertyNameToGetValue<T>()
+    public static Dictionary<string, Func<T, object?>> GetPropertyNameToGetScalarValue<T>()
     {
         return typeof(T)
             .GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.GetProperty)
+            .Where(x => x.PropertyType == typeof(string) || x.PropertyType.IsValueType)
             .ToDictionary<PropertyInfo, string, Func<T, object?>>(
                 x => x.Name,
                 x => y => PropertyCallAdapterProvider<T>.GetInstance(x.Name).InvokeGet(y));

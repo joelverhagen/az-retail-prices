@@ -1,7 +1,8 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public class MeterName
+public record MeterName
 {
-    public int MeterNameId { get; set; }
-    public string MeterNameValue { get; set; } = null!;
+    public int Id { get; set; }
+
+    public string Value { get; set; } = null!;
 }

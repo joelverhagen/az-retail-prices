@@ -13,7 +13,7 @@ public class PriceResponse
         decimal? unitPrice,
         string armRegionName,
         string location,
-        DateTime? effectiveStartDate,
+        DateTimeOffset? effectiveStartDate,
         string meterId,
         string meterName,
         string productId,
@@ -28,7 +28,7 @@ public class PriceResponse
         bool? isPrimaryMeterRegion,
         string armSkuName,
         string? reservationTerm,
-        DateTime? effectiveEndDate)
+        DateTimeOffset? effectiveEndDate)
     {
         CurrencyCode = currencyCode ?? throw new ArgumentNullException(nameof(currencyCode));
         TierMinimumUnits = tierMinimumUnits ?? throw new ArgumentNullException(nameof(tierMinimumUnits));
@@ -73,7 +73,7 @@ public class PriceResponse
     public string Location { get; set; }
 
     [JsonPropertyName("effectiveStartDate")]
-    public DateTime? EffectiveStartDate { get; set; }
+    public DateTimeOffset? EffectiveStartDate { get; set; }
 
     [JsonPropertyName("meterId")]
     public string MeterId { get; set; }
@@ -118,7 +118,7 @@ public class PriceResponse
     public string? ReservationTerm { get; set; }
 
     [JsonPropertyName("effectiveEndDate")]
-    public DateTime? EffectiveEndDate { get; set; }
+    public DateTimeOffset? EffectiveEndDate { get; set; }
 
     [JsonExtensionData]
     public Dictionary<string, JsonElement>? ExtraProperties { get; set; }

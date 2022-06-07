@@ -1,7 +1,8 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public class ArmSkuName
+public record ArmSkuName
 {
-    public int ArmSkuNameId { get; set; }
-    public string ArmSkuNameValue { get; set; } = null!;
+    public int Id { get; set; }
+
+    public string Value { get; set; } = null!;
 }

@@ -1,6 +1,6 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public record PriceType
+public record SkuName
 {
     public int Id { get; set; }
 

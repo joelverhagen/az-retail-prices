@@ -2,11 +2,9 @@
 using System.Text.Json;
 using Knapcode.AzureRetailPrices.Client;
 using Knapcode.AzureRetailPrices.LoadDatabase;
-using Knapcode.AzureRetailPrices.OptionalPropertyFinder;
-using Knapcode.AzureRetailPrices.PropertyRelationshipFinder;
 
-await PropertyRelationshipFinderCommand.RunAsync();
-// LoadDatabaseCommand.Run();
+// OptionalPropertyFinderCommand.Run();
+LoadDatabaseCommand.Run();
 
 return;
 

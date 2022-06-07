@@ -1,7 +1,8 @@
 ﻿namespace Knapcode.AzureRetailPrices.Database;
 
-public class ServiceFamily
+public record ServiceFamily
 {
-    public int ServiceFamilyId { get; set; }
-    public string ServiceFamilyValue { get; set; } = null!;
+    public int Id { get; set; }
+
+    public string Value { get; set; } = null!;
 }
