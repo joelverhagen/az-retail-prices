@@ -10,9 +10,10 @@ param (
     [string]$Destination
 )
 
-$url = "https://prices.azure.com/api/retail/prices?`$skip="
+$url = "https://prices.azure.com/api/retail/prices?`$orderby=meterId,meterName,priceType,skuId,tierMinimumUnits&`$skip="
 $page = 0
 $utf8 = New-Object System.Text.UTF8Encoding $False
+$ProgressPreference = "SilentlyContinue"
 
 while ($true) {
     $path = Join-Path $Destination "page$page.json"
