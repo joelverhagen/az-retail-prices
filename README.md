@@ -57,3 +57,118 @@ Equivalencies:
 - `armRegionName` ⇔ `location`
 - `productId` ⇔ `productName`
 - `serviceId` ⇔ `serviceName`
+
+### Diagram
+
+```mermaid
+erDiagram
+
+  ArmSkuNames {
+    INTEGER Id
+    TEXT Value
+  }
+
+  MeterNames {
+    INTEGER Id
+    TEXT Value
+  }
+
+  PriceTypes {
+    INTEGER Id
+    TEXT Value
+  }
+
+  Regions {
+    INTEGER Id
+    TEXT ArmRegionName
+    TEXT Location
+  }
+
+  ReservationTerms {
+    INTEGER Id
+    TEXT Value
+  }
+
+  ServiceFamilies {
+    INTEGER Id
+    TEXT Value
+  }
+
+  SkuNames {
+    INTEGER Id
+    TEXT Value
+  }
+
+  UnitOfMeasures {
+    INTEGER Id
+    TEXT Value
+  }
+
+  Meters {
+    INTEGER Id
+    TEXT MeterId
+    INTEGER UnitOfMeasureId
+  }
+
+  Services {
+    INTEGER Id
+    TEXT ServiceId
+    TEXT ServiceName
+    INTEGER ServiceFamilyId
+  }
+
+  Products {
+    INTEGER Id
+    TEXT ProductId
+    TEXT ProductName
+    INTEGER ServiceId
+  }
+
+  Skus {
+    INTEGER Id
+    INTEGER SkuNameId
+    INTEGER ArmSkuNameId
+    INTEGER RegionId
+    INTEGER ProductId
+    TEXT SkuIdSuffix
+    INTEGER ReservationTermId
+  }
+
+  Prices {
+    INTEGER Id
+    INTEGER MeterId
+    INTEGER MeterNameId
+    INTEGER PriceTypeId
+    INTEGER SkuId
+    TEXT TierMinimumUnits
+    TEXT RetailPrice
+    TEXT UnitPrice
+    INTEGER EffectiveStartDate
+    INTEGER IsPrimaryMeterRegion
+    INTEGER EffectiveEndDate
+  }
+
+  ArmSkuNames ||--o{ Skus : "foreign key"
+
+  MeterNames ||--o{ Prices : "foreign key"
+
+  PriceTypes ||--o{ Prices : "foreign key"
+
+  Regions ||--o{ Skus : "foreign key"
+
+  ReservationTerms ||--o{ Skus : "foreign key"
+
+  ServiceFamilies ||--o{ Services : "foreign key"
+
+  SkuNames ||--o{ Skus : "foreign key"
+
+  UnitOfMeasures ||--o{ Meters : "foreign key"
+
+  Meters ||--o{ Prices : "foreign key"
+
+  Services ||--o{ Products : "foreign key"
+
+  Products ||--o{ Skus : "foreign key"
+
+  Skus ||--o{ Prices : "foreign key"
+```
