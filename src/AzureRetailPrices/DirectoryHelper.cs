@@ -19,10 +19,7 @@ public static class DirectoryHelper
     public static IEnumerable<string> GetLatestSnapshotFiles()
     {
         var root = GetRoot();
-
-        var latestSnapshot = Directory.EnumerateDirectories(Path.Combine(root, "snapshot")).OrderByDescending(x => x).Last();
-        var files = Directory.EnumerateFiles(latestSnapshot, "page*.json");
-        return files;
+        return Directory.EnumerateFiles(Path.Combine(root, "snapshot"), "page*.json");
     }
 
     public static string GetRoot()
