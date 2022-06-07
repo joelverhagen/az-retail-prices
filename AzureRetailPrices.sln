@@ -7,14 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureRetailPrices", "src\Az
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{151F90E3-7443-4A10-A550-B0FCADEBC64F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "src\Sandbox\Sandbox.csproj", "{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sandbox", "src\Sandbox\Sandbox.csproj", "{DAE6C6BC-5541-4C68-86E3-D0064F6333FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{98855748-3C0C-4E44-A3EE-D5697701430A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureRetailPrices.Test", "test\AzureRetailPrices.Test\AzureRetailPrices.Test.csproj", "{4F68A8FC-B468-413D-A0A5-D1320EA38C71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureRetailPrices.Test", "test\AzureRetailPrices.Test\AzureRetailPrices.Test.csproj", "{4F68A8FC-B468-413D-A0A5-D1320EA38C71}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61360DAD-87D0-414A-B555-07C97B48E319}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
