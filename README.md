@@ -1,4 +1,4 @@
-# az-retail-prices
+# data-az-retail-prices
 
 ## DB Diagram
 
