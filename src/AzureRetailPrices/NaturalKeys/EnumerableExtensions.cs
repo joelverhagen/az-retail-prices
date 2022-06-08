@@ -1,4 +1,4 @@
-﻿namespace Knapcode.AzureRetailPrices.NaturalKeyFinder;
+﻿namespace Knapcode.AzureRetailPrices.NaturalKeys;
 
 public static class EnumerableExtensions
 {

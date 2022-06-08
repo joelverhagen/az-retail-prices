@@ -1,8 +1,8 @@
 ﻿using System.Text.Json;
 
-namespace Knapcode.AzureRetailPrices.OptionalPropertyFinder;
+namespace Knapcode.AzureRetailPrices.OptionalProperties;
 
-public static class OptionalPropertyFinderCommand
+public static class OptionalPropertiesCommand
 {
     public static void Run()
     {

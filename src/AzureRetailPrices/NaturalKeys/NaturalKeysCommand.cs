@@ -3,9 +3,9 @@ using System.Diagnostics;
 using Knapcode.AzureRetailPrices.Client;
 using Knapcode.AzureRetailPrices.Reflection;
 
-namespace Knapcode.AzureRetailPrices.NaturalKeyFinder;
+namespace Knapcode.AzureRetailPrices.NaturalKeys;
 
-public static class NaturalKeyFinderCommand
+public static class NaturalKeysCommand
 {
     public static async Task RunAsync()
     {
