@@ -5,6 +5,8 @@ name: Update data
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "5 4 * * *"
 
 jobs:
   scheduled:
@@ -12,6 +14,44 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Update snapshot
+        shell: pwsh
+        run: |
+          ./snapshot.ps1 -Buckets 16
+
+      - name: Commit and push if data has changed
+        id: commit-if-changed
+        run: |-
+          git config user.name "Automated"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          timestamp=$(date --iso-8601=seconds)
+          git commit -m "Latest data: ${timestamp}" || exit 0
+          git push
+          git tag -d latest || true
+          git push origin :refs/tags/latest || true
+          git tag latest
+          git push origin latest
+          echo '::set-output name=has-changed::true'
+
+      - name: Load snapshot into SQLite
+        shell: pwsh
+        if: steps.commit-if-changed.outputs.has-changed
+        run: dotnet run --project ./src/AzureRetailPrices.Tool --configuration Release -- load-database
+
+      - name: Update GitHub release
+        uses: softprops/action-gh-release@v1
+        if: steps.commit-if-changed.outputs.has-changed
+        with:
+          tag_name: latest
+          files: |
+            azure-prices.db
 
       - name: Delete GitHub draft releases
         uses: hugo19941994/delete-draft-releases@v1.0.0
