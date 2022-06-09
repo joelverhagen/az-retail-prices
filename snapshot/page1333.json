@@ -1690,6 +1690,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "52cf6c9e-b05c-534d-9b64-3c8196d23e85",
       "meterName": "LRS Snapshots",
       "productId": "DZH318Z0BP6Q",

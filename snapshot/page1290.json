@@ -1873,6 +1873,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "4fda1dc1-68f8-570f-a4bb-dbb4dd077fa3",
       "meterName": "LRS All Other Operations",
       "productId": "DZH318Z0BZ18",

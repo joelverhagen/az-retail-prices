@@ -2178,6 +2178,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a3940d51-b7c8-54e6-aed7-210b20d9f3a4",
       "meterName": "Cool GRS Early Delete",
       "productId": "DZH318Z0BJRM",

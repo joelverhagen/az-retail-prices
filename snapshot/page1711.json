@@ -639,6 +639,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "69d77ff0-b5c8-59cf-b703-30b91522a9de",
       "meterName": "LRS Iterative Write Operations",
       "productId": "DZH318Z0CPS6",

@@ -1003,6 +1003,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-10-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "46587a09-d9c1-54e5-9f59-f3521ff58d4b",
       "meterName": "Cool RA-GRS Blob Inventory",
       "productId": "DZH318Z0BPH7",

@@ -2040,6 +2040,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a9ddaa85-b54f-5391-8dd8-9bd4a2d22766",
       "meterName": "LRS Write Additional IO",
       "productId": "DZH318Z0BNWT",

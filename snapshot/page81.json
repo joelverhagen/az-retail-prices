@@ -480,6 +480,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "053d1a49-054b-5558-8c9e-c3307553383e",
       "meterName": "P60 Disks",
       "productId": "DZH318Z0BP04",

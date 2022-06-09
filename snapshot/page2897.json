@@ -2096,6 +2096,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "b2c7f833-acae-5f7a-b88a-66e8592e2ebc",
       "meterName": "M416ms v2 Low Priority",
       "productId": "DZH318Z0BX5L",

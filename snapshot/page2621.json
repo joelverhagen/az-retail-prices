@@ -255,6 +255,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a194d9f5-d41f-5eeb-82e4-4dca6e10aeba",
       "meterName": "Cool Iterative Read Operations",
       "productId": "DZH318Z0BJRM",

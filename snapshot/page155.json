@@ -343,6 +343,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "0a02d5a0-36f4-58ef-b4ac-e5bb7c072afc",
       "meterName": "M208-52s_v2 Low Priority",
       "productId": "DZH318Z0BX5L",

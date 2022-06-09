@@ -1051,6 +1051,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "4ae7eba7-80eb-5817-9c12-d61a74582688",
       "meterName": "P40 Disk Mounts",
       "productId": "DZH318Z0BP04",

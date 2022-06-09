@@ -1714,6 +1714,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-07-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a380f439-1064-5209-b561-f8b0f789fd6d",
       "meterName": "E1 Disk Mounts",
       "productId": "DZH318Z0BP88",

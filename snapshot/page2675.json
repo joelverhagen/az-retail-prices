@@ -2025,6 +2025,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a5060c14-2f24-5982-b8af-fb5ba87b210b",
       "meterName": "Hot LRS Index",
       "productId": "DZH318Z0BJRM",

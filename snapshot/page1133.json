@@ -2199,6 +2199,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "45c90092-14e2-58c8-b8f0-f0d5d5c7bd76",
       "meterName": "GRS Disk Write Operations",
       "productId": "DZH318Z0BNWT",
