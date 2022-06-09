@@ -25,6 +25,7 @@ jobs:
         run: dotnet run --project ./src/AzureRetailPrices.Tool --configuration Release -- load-database
 
       - name: Commit and push if data has changed
+        id: commit-if-changed
         run: |-
           git config user.name "Automated"
           git config user.email "actions@users.noreply.github.com"
@@ -36,8 +37,10 @@ jobs:
           git push origin :refs/tags/latest || true
           git tag latest
           git push origin latest
+          echo '::set-output name=HAS_CHANGED::true'
 
       - uses: softprops/action-gh-release@v1
+        if: steps.commit-if-changed.outputs.HAS_CHANGED
         with:
           tag_name: latest
           files: |
