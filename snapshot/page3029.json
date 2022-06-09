@@ -1897,8 +1897,8 @@
     {
       "currencyCode": "USD",
       "tierMinimumUnits": 0,
-      "retailPrice": 0,
-      "unitPrice": 0,
+      "retailPrice": 24.96,
+      "unitPrice": 24.96,
       "armRegionName": "",
       "location": "",
       "effectiveStartDate": "2019-04-01T00:00:00Z",

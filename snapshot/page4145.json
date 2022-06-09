@@ -8,28 +8,6 @@
       "tierMinimumUnits": 0,
       "retailPrice": 0,
       "unitPrice": 0,
-      "armRegionName": "westcentralus",
-      "location": "US West Central",
-      "effectiveStartDate": "2021-11-01T00:00:00Z",
-      "meterId": "fff96bda-c92a-5612-9ccb-83a114bcedef",
-      "meterName": "Transcription Event - Free",
-      "productId": "DZH318Z0BQLJ",
-      "skuId": "DZH318Z0BQLJ/0055",
-      "productName": "Live Channels",
-      "skuName": "Transcription",
-      "serviceName": "Media Services",
-      "serviceId": "DZH314XRFTP0",
-      "serviceFamily": "Web",
-      "unitOfMeasure": "1/Hour",
-      "type": "Consumption",
-      "isPrimaryMeterRegion": false,
-      "armSkuName": ""
-    },
-    {
-      "currencyCode": "USD",
-      "tierMinimumUnits": 0,
-      "retailPrice": 0,
-      "unitPrice": 0,
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2021-11-01T00:00:00Z",
@@ -1373,5 +1351,5 @@
     }
   ],
   "NextPageLink": null,
-  "Count": 62
+  "Count": 61
 }
