@@ -1,4 +1,4 @@
-# Periodically checks the Azure Retail Price API for new prices
+# Periodically checks the Azure Retail Price API for new prices and stores them in a SQLite DB
 # Inspired by https://simonwillison.net/2020/Oct/9/git-scraping/
 
 name: Update data
@@ -32,3 +32,13 @@ jobs:
           timestamp=$(date --iso-8601=seconds)
           git commit -m "Latest data: ${timestamp}" || exit 0
           git push
+          git tag -d latest || true
+          git push origin :refs/tags/latest || true
+          git tag latest
+          git push origin latest
+
+      - uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          files: |
+            azure-prices.db
