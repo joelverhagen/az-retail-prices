@@ -4,8 +4,15 @@ param (
     [int]$Buckets
 )
 
+$stopwatch = [Diagnostics.StopWatch]::StartNew()
+
 $dir = Join-Path $PSScriptRoot "snapshot"
-Remove-Item $dir -Recurse -Force
+if (Test-Path $dir) {
+    $initialCount = @(Get-ChildItem $dir).Count
+    Remove-Item $dir -Recurse -Force
+} else {
+    $initialCount = "?"
+}
 New-Item $dir -ItemType Directory | Out-Null
 
 0..($Buckets - 1) | ForEach-Object {
@@ -18,8 +25,9 @@ Write-Host ""
 
 try {
     while (Get-Job -State "Running") {
+        Write-Host "[$($stopwatch.Elapsed)] Files in snapshot dir: $(@(Get-ChildItem $dir).Count) / $initialCount"
         Get-Job | Receive-Job
-        Start-Sleep 1
+        Start-Sleep 5
     }
     Get-Job | Receive-Job
 }
