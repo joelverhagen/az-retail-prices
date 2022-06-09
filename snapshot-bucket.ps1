@@ -24,7 +24,7 @@ while ($true) {
     }
 
     $pageUrl = $url + (100 * $page)
-    $response = Invoke-WebRequest $pageUrl
+    $response = Invoke-WebRequest $pageUrl -Headers @{ "User-Agent" = "AzureRetailPrices/0.0.1 (PowerShell; +https://github.com/joelverhagen/data-az-retail-prices)" }
     $formatted = $response.Content | jq .
     $json = $formatted | ConvertFrom-Json 
 
