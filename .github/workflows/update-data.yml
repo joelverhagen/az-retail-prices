@@ -10,14 +10,15 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - uses: actions/setup-dotnet@v1
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 6.0.x
 
       - name: Update snapshot
-        if: ${{ false }}
         shell: pwsh
         run: |
           ./snapshot.ps1 -Buckets 16
@@ -37,11 +38,13 @@ jobs:
           git push origin latest
           echo '::set-output name=has-changed::true'
 
-      - shell: pwsh
+      - name: Load snapshot into SQLite
+        shell: pwsh
         if: steps.commit-if-changed.outputs.has-changed
         run: dotnet run --project ./src/AzureRetailPrices.Tool --configuration Release -- load-database
 
-      - uses: softprops/action-gh-release@v1
+      - name: Update GitHub release
+        uses: softprops/action-gh-release@v1
         if: steps.commit-if-changed.outputs.has-changed
         with:
           tag_name: latest
