@@ -55,6 +55,7 @@
       "armRegionName": "westeurope",
       "location": "EU West",
       "effectiveStartDate": "2022-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "aed9789d-50e3-5346-8b6c-e2f5e90d1f86",
       "meterName": "Standard",
       "productId": "DZH318Z0B7SW",

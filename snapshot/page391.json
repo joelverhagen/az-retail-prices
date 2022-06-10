@@ -1954,6 +1954,7 @@
       "armRegionName": "westus2",
       "location": "US West 2",
       "effectiveStartDate": "2022-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "17d2a705-3197-5975-ac67-d81c4d3f6acc",
       "meterName": "Standard",
       "productId": "DZH318Z0B7SW",

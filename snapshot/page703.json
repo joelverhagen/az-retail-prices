@@ -1434,6 +1434,7 @@
       "armRegionName": "usgovvirginia",
       "location": "US Gov Virginia",
       "effectiveStartDate": "2020-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "2b3a2c62-e842-54f2-b0e4-9b7c8c3b6b27",
       "meterName": "Dasv4 Type1",
       "productId": "DZH318Z0CXT1",

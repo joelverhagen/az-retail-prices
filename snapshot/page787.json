@@ -545,6 +545,7 @@
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2022-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "3079e005-997c-5a6d-8363-f56b29b4297e",
       "meterName": "Standard",
       "productId": "DZH318Z0B7SW",
