@@ -2175,6 +2175,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "32ab261f-8f3c-5d01-8873-3dd3f25d5f19",
       "meterName": "A1 v2 Spot",
       "productId": "DZH318Z0BPRJ",

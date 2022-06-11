@@ -1959,6 +1959,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "18235264-22c9-5591-9218-2eec8e7496ab",
       "meterName": "A8m v2",
       "productId": "DZH318Z0BPRJ",

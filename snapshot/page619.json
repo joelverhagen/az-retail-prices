@@ -1904,6 +1904,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-10-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "26603d8c-8b87-5ff6-863e-6109804d1890",
       "meterName": "Cool LRS Early Delete",
       "productId": "DZH318Z0C120",

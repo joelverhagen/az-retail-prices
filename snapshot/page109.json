@@ -1852,7 +1852,7 @@
       "meterName": "Backup ZRS Data Stored",
       "productId": "DZH318Z0BF2D",
       "skuId": "DZH318Z0BF2D/0029",
-      "productName": "SQL Database Hyperscale - LTR Backup Storage",
+      "productName": "SQL DB SingDB Hyp-LTR Backup Storage",
       "skuName": "Backup ZRS",
       "serviceName": "SQL Database",
       "serviceId": "DZH3180HX10K",

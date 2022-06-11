@@ -1101,6 +1101,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "23f5ebf1-59a1-57d8-9527-3a695a3dce4d",
       "meterName": "F72s v2 Low Priority",
       "productId": "DZH318Z0BQ4X",

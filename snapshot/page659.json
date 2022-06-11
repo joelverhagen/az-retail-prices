@@ -1389,6 +1389,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "28b897f5-6176-51eb-8ba1-e1c0e9bcc0bc",
       "meterName": "E48as v5 Spot",
       "productId": "DZH318Z093WZ",

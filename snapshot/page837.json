@@ -1380,6 +1380,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "33629225-1492-5816-a112-faa4eb495c44",
       "meterName": "F4s v2 Spot",
       "productId": "DZH318Z0BQ4X",

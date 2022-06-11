@@ -1901,7 +1901,7 @@
       "meterName": "Backup RA-GRS Data Stored",
       "productId": "DZH318Z0BF2D",
       "skuId": "DZH318Z0BF2D/003B",
-      "productName": "SQL Database Hyperscale - LTR Backup Storage",
+      "productName": "SQL DB SingDB Hyp-LTR Backup Storage",
       "skuName": "Backup RA-GRS",
       "serviceName": "SQL Database",
       "serviceId": "DZH3180HX10K",
