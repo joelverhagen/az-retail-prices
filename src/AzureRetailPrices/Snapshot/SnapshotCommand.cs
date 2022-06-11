@@ -17,11 +17,14 @@ public static class SnapshotCommand
         var lastCount = 0;
         if (Directory.Exists(dir))
         {
+            Console.WriteLine("Deleting existing snapshot...");
             lastCount = DirectoryHelper.GetLatestSnapshotFiles().Count();
             Directory.Delete(dir, recursive: true);
         }
 
         Directory.CreateDirectory(dir);
+
+        var workerCount = 32;
 
         // Start downloading the pages
         var services = new ServiceCollection();
@@ -30,6 +33,7 @@ public static class SnapshotCommand
             .AddHttpClient<PricesClient>()
             .ConfigurePrimaryHttpMessageHandler(x => new HttpClientHandler
             {
+                MaxConnectionsPerServer = workerCount * 2,
                 AutomaticDecompression = DecompressionMethods.All,
             })
             .AddPolicyHandler(HttpPolicyExtensions
@@ -40,7 +44,7 @@ public static class SnapshotCommand
 
         var client = serviceProvider.GetRequiredService<PricesClient>();
         var take = 100;
-        var workerCount = 16;
+        Console.WriteLine("Starting...");
         var sw = Stopwatch.StartNew();
         var progress = new Progress(lastCount);
         var workers = Enumerable
@@ -48,6 +52,7 @@ public static class SnapshotCommand
             .Select(x => SnapshotAsync(dir, client, x, workerCount, take, progress))
             .ToList();
         await Task.WhenAll(workers);
+        Console.WriteLine("Complete.");
     }
 
     private static async Task SnapshotAsync(string dir, PricesClient client, int firstPage, int pageSkip, int take, Progress progress)
@@ -57,17 +62,9 @@ public static class SnapshotCommand
         while (true)
         {
             var sw = Stopwatch.StartNew();
-            using var response = await client.GetPricesPageAsync(
-                currencyCode: "USD",
-                onlyPrimaryMeterRegion: false,
-                query: p => p
-                    .OrderBy(x => x.MeterId)
-                    .ThenBy(x => x.MeterName)
-                    .ThenBy(x => x.PriceType)
-                    .ThenBy(x => x.SkuId)
-                    .ThenBy(x => x.TierMinimumUnits)
-                    .Skip(currentPage * take)
-                    .Take(take));
+            using var response = await client.GetPricesPageAsync(query: p => p
+                .Skip(currentPage * take)
+                .Take(take));
             progress.Increment();
             Console.WriteLine($"[{progress.Total.TotalSeconds,9:F3}] [Worker {firstPage:D2}] Fetched page {currentPage:D5} / {progress.LastCount:D5} in {sw.Elapsed.TotalSeconds,6:F3}s (rate: {progress.RateSeconds:F3}/s)");
 

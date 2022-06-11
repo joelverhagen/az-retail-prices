@@ -44,7 +44,7 @@ public class PricesClient
 
     public async Task<JsonResponse<PricesResponse>> GetPricesPageAsync(
         string? currencyCode = null,
-        bool onlyPrimaryMeterRegion = false,
+        bool? onlyPrimaryMeterRegion = null,
         Func<IQueryable<PriceFilter>, IQueryable<PriceFilter>>? query = null)
     {
         var baseUrl = "https://prices.azure.com/api/retail/prices";
@@ -59,7 +59,7 @@ public class PricesClient
             queryString["currencyCode"] = currencyCode;
         }
 
-        if (onlyPrimaryMeterRegion)
+        if (onlyPrimaryMeterRegion.HasValue)
         {
             queryString["meterRegion"] = "primary";
         }
