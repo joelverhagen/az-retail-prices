@@ -24,7 +24,7 @@ public static class SnapshotCommand
 
         Directory.CreateDirectory(dir);
 
-        var workerCount = 32;
+        var workerCount = 16;
 
         // Start downloading the pages
         var services = new ServiceCollection();
