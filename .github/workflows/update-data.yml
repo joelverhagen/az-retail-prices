@@ -22,8 +22,7 @@ jobs:
 
       - name: Update snapshot
         shell: pwsh
-        run: |
-          ./snapshot.ps1 -Buckets 16
+        run: dotnet run --project ./src/AzureRetailPrices.Tool --configuration Release -- snapshot
 
       - name: Commit and push if data has changed
         id: commit-if-changed

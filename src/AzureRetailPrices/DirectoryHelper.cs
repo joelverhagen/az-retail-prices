@@ -18,8 +18,13 @@ public static class DirectoryHelper
 
     public static IEnumerable<string> GetLatestSnapshotFiles()
     {
+        return Directory.EnumerateFiles(GetSnapshotDirectory(), "page*.json");
+    }
+
+    public static string GetSnapshotDirectory()
+    {
         var root = GetRoot();
-        return Directory.EnumerateFiles(Path.Combine(root, "snapshot"), "page*.json");
+        return Path.Combine(root, "snapshot");
     }
 
     public static string GetRoot()

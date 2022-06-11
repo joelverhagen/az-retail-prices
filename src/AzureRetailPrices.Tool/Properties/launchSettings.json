@@ -2,7 +2,7 @@
   "profiles": {
     "Sandbox": {
       "commandName": "Project",
-      "commandLineArgs": "compute-prices"
+      "commandLineArgs": "load-database"
     }
   }
 }

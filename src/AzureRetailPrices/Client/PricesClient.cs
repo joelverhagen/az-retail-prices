@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Headers;
+using System.Text.Json;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.OData.Client;
 
@@ -20,23 +21,28 @@ public class PricesClient
         bool onlyPrimaryMeterRegion = false,
         Func<IQueryable<PriceFilter>, IQueryable<PriceFilter>>? query = null)
     {
-        var response = await GetPricesPageAsync(currencyCode, onlyPrimaryMeterRegion, query);
-        foreach (var item in response.Items)
+
+        using var response = await GetPricesPageAsync(currencyCode, onlyPrimaryMeterRegion, query);
+        foreach (var item in response.Value.Items)
         {
             yield return item;
         }
 
-        while (response.NextPageLink is not null)
+        string? nextPageLink = response.Value.NextPageLink;
+
+        while (nextPageLink != null)
         {
-            response = await GetPricesResponseAsync(response.NextPageLink);
-            foreach (var item in response.Items)
+            using var nextResponse = await GetPricesPageAsync(nextPageLink);
+            foreach (var item in nextResponse.Value.Items)
             {
                 yield return item;
             }
+
+            nextPageLink = nextResponse.Value.NextPageLink;
         }
     }
 
-    public async Task<PricesResponse> GetPricesPageAsync(
+    public async Task<JsonResponse<PricesResponse>> GetPricesPageAsync(
         string? currencyCode = null,
         bool onlyPrimaryMeterRegion = false,
         Func<IQueryable<PriceFilter>, IQueryable<PriceFilter>>? query = null)
@@ -44,9 +50,9 @@ public class PricesClient
         var baseUrl = "https://prices.azure.com/api/retail/prices";
 
         var queryString = new SortedDictionary<string, string>
-    {
-        { "api-version", "2021-10-01-preview" },
-    };
+        {
+            { "api-version", "2021-10-01-preview" },
+        };
 
         if (currencyCode is not null)
         {
@@ -74,30 +80,40 @@ public class PricesClient
 
         var url = QueryHelpers.AddQueryString(baseUrl, queryString);
 
-        return await GetPricesResponseAsync(url);
+        return await GetPricesPageAsync(url);
     }
 
-    private async Task<PricesResponse> GetPricesResponseAsync(string url)
+    private async Task<JsonResponse<PricesResponse>> GetPricesPageAsync(string url)
     {
-        Console.WriteLine(url);
+        using var request = new HttpRequestMessage(HttpMethod.Get, url);
+        request.Headers.TryAddWithoutValidation("User-Agent", "AzureRetailPrices/0.0.1 (.NET; +https://github.com/joelverhagen/data-az-retail-prices)");
 
-        using var response = await _httpClient.GetAsync(url);
+        using var response = await _httpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
-        using var stream = response.Content.ReadAsStream();
-        var pricesResponse = JsonSerializer.Deserialize<PricesResponse>(stream);
-        if (pricesResponse is null)
+        using var stream = await response.Content.ReadAsStreamAsync();
+        var document = JsonDocument.Parse(stream);
+        try
         {
-            throw new InvalidDataException("The prices response is null.");
-        }
+            var pricesResponse = JsonSerializer.Deserialize<PricesResponse>(document);
+            if (pricesResponse is null)
+            {
+                throw new InvalidDataException("The prices response is null.");
+            }
 
-        return pricesResponse;
+            return new (document, pricesResponse);
+        }
+        catch
+        {
+            document.Dispose();
+            throw;
+        }
     }
 
     private class PricesDataServiceContext : DataServiceContext
     {
-        private const string url = "http://localhost/Prices.svc";
+        private const string Url = "http://localhost/Prices.svc";
 
-        public PricesDataServiceContext() : base(new Uri(url))
+        public PricesDataServiceContext() : base(new Uri(Url))
         {
         }
 

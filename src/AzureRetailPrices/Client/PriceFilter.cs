@@ -15,4 +15,12 @@ public class PriceFilter
     public string ServiceFamily { get; set; } = null!;
     public string PriceType { get; set; } = null!;
     public string ArmSkuName { get; set; } = null!;
+
+    public decimal TierMinimumUnits { get; set; }
+    public decimal RetailPrice { get; set; }
+    public decimal UnitPrice { get; set; }
+    public string UnitOfMeasure { get; set; } = null!;
+    public string? ReservationTerm { get; set; }
+    public bool IsPrimaryMeterRegion { get; set; }
+    public DateTimeOffset? EffectiveEndDate { get; set; }
 }

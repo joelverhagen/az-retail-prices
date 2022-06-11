@@ -3,14 +3,16 @@ using Knapcode.AzureRetailPrices.LoadDatabase;
 using Knapcode.AzureRetailPrices.NaturalKeys;
 using Knapcode.AzureRetailPrices.OptionalProperties;
 using Knapcode.AzureRetailPrices.PropertyRelationships;
+using Knapcode.AzureRetailPrices.Snapshot;
 
 var commands = new Dictionary<string, Func<Task>>(StringComparer.OrdinalIgnoreCase)
 {
     { "load-database", () => Task.Run(LoadDatabaseCommand.Run) },
-    { "natural-keys", async () => await NaturalKeysCommand.RunAsync() },
+    { "natural-keys", () => NaturalKeysCommand.RunAsync() },
     { "optional-properties", () => Task.Run(OptionalPropertiesCommand.Run) },
-    { "property-relationships", async () => await PropertyRelationshipsCommand.RunAsync() },
+    { "property-relationships", () => PropertyRelationshipsCommand.RunAsync() },
     { "compute-prices", () => Task.Run(ComputePricesCommand.Run) },
+    { "snapshot", () => SnapshotCommand.RunAsync() },
 };
 
 if (args.Length == 0)
