@@ -6,10 +6,6 @@ export interface QueryResultsProps {
 }
 
 class QueryResults extends Component<QueryResultsProps> {
-  constructor(props: QueryResultsProps) {
-    super(props);
-  }
-
   renderRow(values: any[], index: number) {
     return (
       <tr key={index}>
