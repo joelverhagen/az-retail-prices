@@ -20,6 +20,10 @@ jobs:
         with:
           dotnet-version: 6.0.x
 
+      - name: Run tests
+        shell: pwsh
+        run: dotnet test
+
       - name: Update snapshot
         shell: pwsh
         run: dotnet run --project ./src/AzureRetailPrices.Tool --configuration Release -- snapshot
@@ -50,7 +54,7 @@ jobs:
         with:
           tag_name: latest
           files: |
-            azure-prices.db
+            *.db
 
       - name: Delete GitHub draft releases
         uses: hugo19941994/delete-draft-releases@v1.0.0
