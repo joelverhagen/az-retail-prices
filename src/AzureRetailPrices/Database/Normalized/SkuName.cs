@@ -1,6 +1,6 @@
-﻿namespace Knapcode.AzureRetailPrices.Database;
+﻿namespace Knapcode.AzureRetailPrices.Database.Normalized;
 
-public record UnitOfMeasure
+public record SkuName
 {
     public int Id { get; set; }
 

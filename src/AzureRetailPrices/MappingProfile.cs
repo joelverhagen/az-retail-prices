@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Knapcode.AzureRetailPrices.Client;
-using Knapcode.AzureRetailPrices.Database;
+using Normalized = Knapcode.AzureRetailPrices.Database.Normalized;
+using Denormalized = Knapcode.AzureRetailPrices.Database.Denormalized;
 
 namespace Knapcode.AzureRetailPrices;
 
@@ -10,42 +11,42 @@ public class MappingProfile : Profile
     {
         CreateMap<PriceResponse, PriceFilter>();
 
-        CreateMap<PriceResponse, ArmSkuName>()
+        CreateMap<PriceResponse, Normalized.ArmSkuName>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.ArmSkuName));
-        CreateMap<PriceResponse, Meter>()
+        CreateMap<PriceResponse, Normalized.Meter>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.UnitOfMeasureId, opt => opt.Ignore())
             .ForMember(x => x.UnitOfMeasure, opt => opt.MapFrom(x => x));
-        CreateMap<PriceResponse, MeterName>()
+        CreateMap<PriceResponse, Normalized.MeterName>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.MeterName));
-        CreateMap<PriceResponse, PriceType>()
+        CreateMap<PriceResponse, Normalized.PriceType>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.PriceType));
-        CreateMap<PriceResponse, Product>()
+        CreateMap<PriceResponse, Normalized.Product>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.ProductId, opt => opt.MapFrom(x => x.ProductId))
             .ForMember(x => x.ProductName, opt => opt.MapFrom(x => x.ProductName))
             .ForMember(x => x.ServiceId, opt => opt.Ignore())
             .ForMember(x => x.Service, opt => opt.MapFrom(x => x));
-        CreateMap<PriceResponse, Region>()
+        CreateMap<PriceResponse, Normalized.Region>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.ArmRegionName, opt => opt.MapFrom(x => x.ArmRegionName))
             .ForMember(x => x.Location, opt => opt.MapFrom(x => x.Location));
-        CreateMap<PriceResponse, ReservationTerm>()
+        CreateMap<PriceResponse, Normalized.ReservationTerm>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.ReservationTerm));
-        CreateMap<PriceResponse, Service>()
+        CreateMap<PriceResponse, Normalized.Service>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.ServiceFamilyId, opt => opt.Ignore())
             .ForMember(x => x.ServiceFamily, opt => opt.MapFrom(x => x))
             .ForMember(x => x.ServiceId, opt => opt.MapFrom(x => x.ServiceId))
             .ForMember(x => x.ServiceName, opt => opt.MapFrom(x => x.ServiceName));
-        CreateMap<PriceResponse, ServiceFamily>()
+        CreateMap<PriceResponse, Normalized.ServiceFamily>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.ServiceFamily));
-        CreateMap<PriceResponse, Sku>()
+        CreateMap<PriceResponse, Normalized.Sku>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.ArmSkuNameId, opt => opt.Ignore())
             .ForMember(x => x.ArmSkuName, opt => opt.MapFrom(x => x))
@@ -58,14 +59,14 @@ public class MappingProfile : Profile
             .ForMember(x => x.SkuIdSuffix, opt => opt.MapFrom(x => ExtractSkuIdPrefix(x)))
             .ForMember(x => x.SkuNameId, opt => opt.Ignore())
             .ForMember(x => x.SkuName, opt => opt.MapFrom(x => x));
-        CreateMap<PriceResponse, SkuName>()
+        CreateMap<PriceResponse, Normalized.SkuName>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.SkuName));
-        CreateMap<PriceResponse, UnitOfMeasure>()
+        CreateMap<PriceResponse, Normalized.UnitOfMeasure>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.Value, opt => opt.MapFrom(x => x.UnitOfMeasure));
 
-        CreateMap<PriceResponse, Price>()
+        CreateMap<PriceResponse, Normalized.Price>()
             .ForMember(x => x.Id, opt => opt.Ignore())
             .ForMember(x => x.EffectiveStartDate, opt => opt.MapFrom(x => x.EffectiveStartDate!.Value.ToUnixTimeSeconds()))
             .ForMember(x => x.EffectiveEndDate, opt => opt.MapFrom(x => ToNullableUnixTimeSeconds(x.EffectiveEndDate)))
@@ -77,6 +78,11 @@ public class MappingProfile : Profile
             .ForMember(x => x.PriceType, opt => opt.MapFrom(x => x))
             .ForMember(x => x.SkuId, opt => opt.Ignore())
             .ForMember(x => x.Sku, opt => opt.MapFrom(x => x));
+
+        CreateMap<PriceResponse, Denormalized.Price>()
+            .ForMember(x => x.Id, opt => opt.Ignore())
+            .ForMember(x => x.EffectiveStartDate, opt => opt.MapFrom(x => x.EffectiveStartDate!.Value.ToUnixTimeSeconds()))
+            .ForMember(x => x.EffectiveEndDate, opt => opt.MapFrom(x => ToNullableUnixTimeSeconds(x.EffectiveEndDate)));
     }
 
     private static long? ToNullableUnixTimeSeconds(DateTimeOffset? x)

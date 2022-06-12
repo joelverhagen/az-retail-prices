@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Knapcode.AzureRetailPrices.Database;
+namespace Knapcode.AzureRetailPrices.Database.Normalized;
 
 public class PricesContext : DbContext
 {
@@ -23,7 +23,7 @@ public class PricesContext : DbContext
     public PricesContext()
     {
         var path = DirectoryHelper.GetRoot();
-        DbPath = Path.Join(path, "azure-prices.db");
+        DbPath = Path.Join(path, "azure-prices-normalized.db");
     }
 
     protected override void OnConfiguring(DbContextOptionsBuilder options)

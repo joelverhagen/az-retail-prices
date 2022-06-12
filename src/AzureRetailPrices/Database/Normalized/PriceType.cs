@@ -1,4 +1,4 @@
-﻿namespace Knapcode.AzureRetailPrices.Database;
+﻿namespace Knapcode.AzureRetailPrices.Database.Normalized;
 
 public record PriceType
 {
