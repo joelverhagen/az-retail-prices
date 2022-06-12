@@ -4,6 +4,7 @@
   "homepage": "https://joleverhagen.github.io/data-az-retail-prices",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.18.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -11,6 +12,7 @@
     "@types/node": "^16.11.39",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
+    "babel-loader": "^8.2.5",
     "query-string": "^7.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -47,5 +49,11 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      "next/babel",
+      "@zeit/next-typescript/babel"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-import React, { Component, FormEvent } from 'react'
+import { Component, FormEvent } from 'react'
 import QueryResults, { QueryResultsProps } from './QueryResults';
 import { execute } from './QueryRunner'
 import * as queryString from 'query-string'

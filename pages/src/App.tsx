@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import QueryForm from './QueryForm';
 import * as queryString from 'query-string'
