@@ -3,6 +3,7 @@
 SCRIPT_DIR="$(dirname "$0")"
 DB_URL="https://github.com/joelverhagen/data-az-retail-prices/releases/download/latest/azure-prices.db"
 DEFAULT_OUT_DIR="$SCRIPT_DIR/build/data"
+PAGE_SIZE="$(expr 1024 \* 32 \* 8)"
 
 OUT_DIR="${1:-$DEFAULT_OUT_DIR}"
 DB_PATH="$OUT_DIR/azure-prices.db"
@@ -16,7 +17,7 @@ wget "$DB_URL" -O "$DB_PATH" -nv
 
 # Optimize the DB
 # Steps from https://github.com/phiresky/sql.js-httpvfs
-sqlite3 "$DB_PATH" "PRAGMA journal_mode = DELETE" "PRAGMA page_size = 32768" "VACUUM"
+sqlite3 "$DB_PATH" "PRAGMA journal_mode = DELETE" "PRAGMA page_size = $PAGE_SIZE" "VACUUM"
 
 # Split the DB
 /bin/bash "$SCRIPT_DIR/create_db.sh" "$DB_PATH" "$OUT_DIR"
