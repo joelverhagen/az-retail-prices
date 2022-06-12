@@ -12,7 +12,7 @@ export async function execute(query: string) {
         const config: SplitFileConfig = {
             from: "jsonconfig",
             // This will run from ./static/js and needs to reach ./data/config.json
-            configUrl: "../../data/config.json"
+            configUrl: `../../data/${process.env.DB_SUBDIR}/config.json`
         }
 
         worker = await createDbWorker(
