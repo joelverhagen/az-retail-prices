@@ -3,10 +3,12 @@
 SCRIPT_DIR="$(dirname "$0")"
 DB_URL="https://github.com/joelverhagen/data-az-retail-prices/releases/download/latest/azure-prices.db"
 DEFAULT_OUT_DIR="$SCRIPT_DIR/public/data"
-PAGE_SIZE="262144"
+
+# Use the maximum page size to reduce round trips
+PAGE_SIZE="65536"
 
 OUT_DIR="${1:-$DEFAULT_OUT_DIR}"
-DB_PATH="$OUT_DIR/azure-prices.db"
+DB_PATH="$OUT_DIR/db.sqlite3"
 
 # Set up the data directory
 rm -rf "$OUT_DIR"
