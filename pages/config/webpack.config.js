@@ -85,14 +85,16 @@ const hasJsxRuntime = (() => {
   }
 })();
 
-// Resolve DB hash
-const dbBaseDir = path.join(paths.appPath, "public", "data")
-const dbSubdir = fs.readdirSync(dbBaseDir)[0]
-const dbConfigPath = path.join(dbBaseDir, dbSubdir, "config.json")
-if (!fs.existsSync(dbConfigPath)) {
-  throw new Error(`Run the postprocess.sh script. Could not find the DB config.json file at: ${dbConfigPath}`)
-}
-process.env.DB_SUBDIR = dbSubdir
+// Resolve DB hashes
+["normalized", "denormalized"].map(x => {
+  const dbBaseDir = path.join(paths.appPath, "public", "data", x)
+  const dbSubdir = fs.readdirSync(dbBaseDir)[0]
+  const dbConfigPath = path.join(dbBaseDir, dbSubdir, "config.json")
+  if (!fs.existsSync(dbConfigPath)) {
+    throw new Error(`Run the postprocess.sh script. Could not find the DB config.json file at: ${dbConfigPath}`)
+  }
+  process.env['DB_SUBDIR_' + x.toUpperCase()] = dbSubdir
+})
 
 // This is the production and development configuration.
 // It is focused on developer experience, fast rebuilds, and a minimal bundle.

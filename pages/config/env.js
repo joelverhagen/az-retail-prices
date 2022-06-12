@@ -89,7 +89,8 @@ function getClientEnvironment(publicUrl) {
         // It is defined here so it is available in the webpackHotDevClient.
         FAST_REFRESH: process.env.FAST_REFRESH !== 'false',
 
-        DB_SUBDIR: process.env.DB_SUBDIR,
+        DB_SUBDIR_NORMALIZED: process.env.DB_SUBDIR_NORMALIZED,
+        DB_SUBDIR_DENORMALIZED: process.env.DB_SUBDIR_DENORMALIZED,
       }
     );
   // Stringify all values so we can feed into webpack DefinePlugin

@@ -16,6 +16,16 @@
   margin: 10px
 }
 
+.app-body input[type='checkbox'] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+.app-body label {
+  user-select: none
+}
+
 .app-body textarea {
   min-width: 50vw;
   min-height: 30vh;

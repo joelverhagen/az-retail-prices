@@ -1,14 +1,16 @@
 import { Component, FormEvent } from 'react'
 import QueryResults, { QueryResultsProps } from './QueryResults';
-import { execute } from './QueryRunner'
+import { DbType, execute } from './QueryRunner'
 import * as queryString from 'query-string'
 
 interface QueryFormProps {
   query: string
+  dbType: DbType
 }
 
 interface QueryFormState {
   loading: boolean
+  dbType: DbType
   query: string
   results?: QueryResultsProps
   errorReason?: any
@@ -20,10 +22,12 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
 
     this.state = {
       loading: false,
+      dbType: props.dbType,
       query: props.query
     }
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleUseNormalizedChange = this.handleUseNormalizedChange.bind(this)
+    this.handleQueryChange = this.handleQueryChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
@@ -40,8 +44,7 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
     this.setState({ loading: true })
     this.setQueryString()
 
-    execute(this.state.query).then(allResults => {
-
+    execute(this.state.query, this.state.dbType).then(allResults => {
       this.setState({
         query: this.state.query,
         results: allResults[0],
@@ -54,13 +57,25 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
 
   setQueryString() {
     const parsedQueryString = queryString.parse(document.location.search);
+    
     parsedQueryString.query = this.state.query;
+
+    if (this.state.dbType == DbType.Denormalized) {
+      parsedQueryString.denormalized = 'true'
+    } else {
+      delete parsedQueryString.denormalized
+    }
+
     const newQueryString = queryString.stringify(parsedQueryString);
     window.history.replaceState('', '', '?' + newQueryString);
   }
 
-  handleChange(event: FormEvent<HTMLTextAreaElement>) {
+  handleQueryChange(event: FormEvent<HTMLTextAreaElement>) {
     this.setState({ query: event.currentTarget.value })
+  }
+
+  handleUseNormalizedChange(event: FormEvent<HTMLInputElement>) {
+    this.setState({ dbType: (event.currentTarget.checked ? DbType.Normalized : DbType.Denormalized) })
   }
 
   renderLoading() {
@@ -93,8 +108,11 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
     return (
       <>
         <form onSubmit={this.handleSubmit}>
-          <textarea name="name" value={this.state.query} onChange={this.handleChange} />
+          <textarea name="name" value={this.state.query} onChange={this.handleQueryChange} />
           <br />
+          <label>
+            Use normalized DB: <input type="checkbox" checked={this.state.dbType == DbType.Normalized} onChange={this.handleUseNormalizedChange} />
+          </label>
           <input type="submit" value="Execute" disabled={this.state.loading} />
           {this.renderLoading()}
         </form>
