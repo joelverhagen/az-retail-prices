@@ -57,10 +57,10 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
 
   setQueryString() {
     const parsedQueryString = queryString.parse(document.location.search);
-    
+
     parsedQueryString.query = this.state.query;
 
-    if (this.state.dbType == DbType.Denormalized) {
+    if (this.state.dbType === DbType.Denormalized) {
       parsedQueryString.denormalized = 'true'
     } else {
       delete parsedQueryString.denormalized
@@ -111,7 +111,7 @@ class QueryForm extends Component<QueryFormProps, QueryFormState> {
           <textarea name="name" value={this.state.query} onChange={this.handleQueryChange} />
           <br />
           <label>
-            Use normalized DB: <input type="checkbox" checked={this.state.dbType == DbType.Normalized} onChange={this.handleUseNormalizedChange} />
+            Use normalized DB: <input type="checkbox" checked={this.state.dbType === DbType.Normalized} onChange={this.handleUseNormalizedChange} />
           </label>
           <input type="submit" value="Execute" disabled={this.state.loading} />
           {this.renderLoading()}

@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <section className="app-body">
-        <QueryForm query={initialQuery ?? ""} dbType={denormalized == 'true' ? DbType.Denormalized : DbType.Normalized} />
+        <QueryForm query={initialQuery ?? ""} dbType={denormalized === 'true' ? DbType.Denormalized : DbType.Normalized} />
       </section>
     </div>
   );
