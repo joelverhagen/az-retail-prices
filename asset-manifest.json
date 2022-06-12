@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/data-az-retail-prices/static/css/main.30235614.css",
-    "main.js": "/data-az-retail-prices/static/js/main.58c14264.js",
-    "static/js/787.b4d61f98.chunk.js": "/data-az-retail-prices/static/js/787.b4d61f98.chunk.js",
+    "main.js": "/data-az-retail-prices/static/js/main.6335d544.js",
+    "static/js/791.c45e3337.chunk.js": "/data-az-retail-prices/static/js/791.c45e3337.chunk.js",
     "static/media/sql-wasm.wasm": "/data-az-retail-prices/static/media/sql-wasm.c74ad46623e4ee643959.wasm",
-    "static/media/sqlite.worker.js": "/data-az-retail-prices/static/media/sqlite.worker.8fac4900abec92c21dbe.js",
+    "static/media/sqlite.worker.js": "/data-az-retail-prices/static/media/sqlite.worker.4dc9b5b4991f78367a82.js",
     "index.html": "/data-az-retail-prices/index.html",
     "main.30235614.css.map": "/data-az-retail-prices/static/css/main.30235614.css.map",
-    "main.58c14264.js.map": "/data-az-retail-prices/static/js/main.58c14264.js.map",
-    "787.b4d61f98.chunk.js.map": "/data-az-retail-prices/static/js/787.b4d61f98.chunk.js.map"
+    "main.6335d544.js.map": "/data-az-retail-prices/static/js/main.6335d544.js.map",
+    "791.c45e3337.chunk.js.map": "/data-az-retail-prices/static/js/791.c45e3337.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.30235614.css",
-    "static/js/main.58c14264.js"
+    "static/js/main.6335d544.js"
   ]
 }
