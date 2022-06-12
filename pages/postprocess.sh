@@ -16,7 +16,7 @@ wget "$DB_URL" -O "$DB_PATH" -nv
 
 # Optimize the DB
 # Steps from https://github.com/phiresky/sql.js-httpvfs
-sqlite3 "$DB_PATH" "PRAGMA journal_mode = DELETE" "PRAGMA page_size = 1024" "VACUUM"
+sqlite3 "$DB_PATH" "PRAGMA journal_mode = DELETE" "PRAGMA page_size = 32768" "VACUUM"
 
 # Split the DB
 /bin/bash "$SCRIPT_DIR/create_db.sh" "$DB_PATH" "$OUT_DIR"
