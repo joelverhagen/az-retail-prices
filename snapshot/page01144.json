@@ -526,6 +526,7 @@
       "armRegionName": "uaenorth",
       "location": "AE North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "466ad887-2825-5038-af3d-6e46094d18f7",
       "meterName": "E64-16s v5 Spot",
       "productId": "DZH318Z096SR",

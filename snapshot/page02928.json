@@ -281,6 +281,7 @@
       "armRegionName": "francecentral",
       "location": "FR Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b4b6a610-b2fc-5ffd-b616-55ffb7f2874f",
       "meterName": "E4-2s v5 Spot",
       "productId": "DZH318Z096SR",

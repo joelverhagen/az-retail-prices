@@ -898,6 +898,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "968f5d7d-9d47-5702-98a3-f835981d9324",
       "meterName": "E16s v4 Spot",
       "productId": "DZH318Z0CSHL",

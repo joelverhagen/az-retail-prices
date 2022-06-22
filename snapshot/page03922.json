@@ -2130,6 +2130,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "f212fb87-253d-5090-b8e0-c21ac8dba098",
       "meterName": "E2 v3/E2s v3 Spot",
       "productId": "DZH318Z0BQ4L",

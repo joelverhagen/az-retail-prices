@@ -1291,6 +1291,7 @@
       "armRegionName": "japanwest",
       "location": "JA West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c3e6f5d6-4034-5553-b154-1283b0471d30",
       "meterName": "E4d v4 Spot",
       "productId": "DZH318Z0D1L5",

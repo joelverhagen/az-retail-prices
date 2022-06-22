@@ -145,6 +145,7 @@
       "armRegionName": "francecentral",
       "location": "FR Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "bb02ad89-74ec-58bb-942f-d80e2a91dda9",
       "meterName": "E8-4ds v5 Spot",
       "productId": "DZH318Z096SN",

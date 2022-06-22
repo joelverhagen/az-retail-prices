@@ -631,6 +631,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "a960af4a-2ecd-579f-98ba-c7390c206ea9",
       "meterName": "E48s v3 Spot",
       "productId": "DZH318Z0BQ4R",

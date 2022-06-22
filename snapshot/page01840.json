@@ -1965,6 +1965,7 @@
       "armRegionName": "eastus",
       "location": "US East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "71eb0e90-db14-5448-bd04-6db6618629d5",
       "meterName": "E8ds v5 Spot",
       "productId": "DZH318Z096SN",

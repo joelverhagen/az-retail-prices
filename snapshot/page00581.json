@@ -2013,6 +2013,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "23d164f3-71f8-5bb6-a9a5-2dd4070be4ad",
       "meterName": "E4d v5 Spot",
       "productId": "DZH318Z08M9R",

@@ -1093,6 +1093,7 @@
       "armRegionName": "switzerlandnorth",
       "location": "CH North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "7de1beab-beaf-57f9-ba6a-67bf8e83f22c",
       "meterName": "E32-8ds v5 Spot",
       "productId": "DZH318Z096SN",

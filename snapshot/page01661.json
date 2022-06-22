@@ -1273,6 +1273,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "66ccf35b-c2a7-565f-9b1a-aa8d9a3e1af8",
       "meterName": "E96as v5 Spot",
       "productId": "DZH318Z093WZ",

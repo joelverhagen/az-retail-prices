@@ -1257,6 +1257,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "99168c38-351c-5dbe-85d0-f1f4c4e3370e",
       "meterName": "E96ias v5 Spot",
       "productId": "DZH318Z093WZ",

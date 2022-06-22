@@ -408,6 +408,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "82a73506-8236-5323-ba3e-5710378f2629",
       "meterName": "E2ds v4 Spot",
       "productId": "DZH318Z0CSHK",

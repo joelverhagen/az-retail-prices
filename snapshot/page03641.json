@@ -1299,6 +1299,7 @@
       "armRegionName": "southindia",
       "location": "IN South",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "e0859c91-7622-580c-bd8e-65ef4692b210",
       "meterName": "E8-2ds v4 Spot",
       "productId": "DZH318Z0CSHK",

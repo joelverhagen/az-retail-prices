@@ -1357,6 +1357,7 @@
       "armRegionName": "westindia",
       "location": "IN West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "ab01dcb1-97e8-5b45-9e33-8c896a62ed66",
       "meterName": "E64-16s v5 Spot",
       "productId": "DZH318Z096SR",

@@ -211,6 +211,7 @@
       "armRegionName": "uaecentral",
       "location": "AE Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1767010d-102b-5f63-ada3-b7a67154f0be",
       "meterName": "E4d v5 Spot",
       "productId": "DZH318Z08M9R",

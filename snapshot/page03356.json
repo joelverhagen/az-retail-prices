@@ -1836,6 +1836,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "cef07eea-a939-5c96-a1d9-816fb4f89908",
       "meterName": "E8-4as_v4 Spot",
       "productId": "DZH318Z0CM2D",

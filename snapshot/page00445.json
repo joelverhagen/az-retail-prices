@@ -2032,6 +2032,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1b5a51c5-c91c-5273-a593-d343035a3ea0",
       "meterName": "E48d v5 Spot",
       "productId": "DZH318Z08M9R",

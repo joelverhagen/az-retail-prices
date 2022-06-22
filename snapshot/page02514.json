@@ -79,6 +79,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "9ae2a332-899a-588a-8838-45123f716f8d",
       "meterName": "E8s v5 Spot",
       "productId": "DZH318Z096SR",

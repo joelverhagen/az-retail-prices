@@ -1677,6 +1677,7 @@
       "armRegionName": "westindia",
       "location": "IN West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c19ddf3d-066a-55d1-a42c-8546daef8e9f",
       "meterName": "E20s v5 Spot",
       "productId": "DZH318Z096T1",

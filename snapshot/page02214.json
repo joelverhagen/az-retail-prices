@@ -1097,6 +1097,7 @@
       "armRegionName": "switzerlandnorth",
       "location": "CH North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "885becfd-e288-5f98-9a9b-5783b6f84afe",
       "meterName": "E16-4s v5 Spot",
       "productId": "DZH318Z096SR",

@@ -453,6 +453,7 @@
       "armRegionName": "germanynorth",
       "location": "DE North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "2668f13a-58eb-53f4-9b22-3ae2b033e104",
       "meterName": "E8-4s v3 Spot",
       "productId": "DZH318Z0BQ4R",

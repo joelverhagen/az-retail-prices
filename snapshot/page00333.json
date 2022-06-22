@@ -369,6 +369,7 @@
       "armRegionName": "germanywestcentral",
       "location": "DE West Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1427b930-085e-5ac7-9075-e4df4f6e4891",
       "meterName": "E2 v4 Spot",
       "productId": "DZH318Z0D1L7",

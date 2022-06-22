@@ -740,6 +740,7 @@
       "armRegionName": "norwayeast",
       "location": "NO East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "46a3af7a-125a-5ac8-8308-8068d8e1fb24",
       "meterName": "E16-8s v5 Spot",
       "productId": "DZH318Z096SR",

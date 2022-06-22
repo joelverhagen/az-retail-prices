@@ -1835,6 +1835,7 @@
       "armRegionName": "westindia",
       "location": "IN West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "f595fb84-2d60-5ad5-8f70-f3a9e096b968",
       "meterName": "E4s v5 Spot",
       "productId": "DZH318Z096T1",

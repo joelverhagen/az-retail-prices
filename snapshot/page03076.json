@@ -2048,6 +2048,7 @@
       "armRegionName": "norwayeast",
       "location": "NO East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "bda81e87-c7e2-5093-bf2a-2cd5394abfe3",
       "meterName": "E64-16s v3 Spot",
       "productId": "DZH318Z0BQ4R",

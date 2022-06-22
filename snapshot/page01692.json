@@ -187,6 +187,7 @@
       "armRegionName": "canadaeast",
       "location": "CA East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "68a1d9be-0a0f-5cd4-8749-93228d651158",
       "meterName": "E8-4ds v5 Spot",
       "productId": "DZH318Z096SN",

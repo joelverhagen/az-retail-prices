@@ -1581,6 +1581,7 @@
       "armRegionName": "australiasoutheast",
       "location": "AU Southeast",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "0ccff956-306a-5215-853a-2a953d8c5ca9",
       "meterName": "E112ias v5 Spot",
       "productId": "DZH318Z093WZ",

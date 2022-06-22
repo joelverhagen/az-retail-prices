@@ -592,6 +592,7 @@
       "armRegionName": "ukwest",
       "location": "UK West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c32a7a8a-df08-54fd-8409-8487b4733d8a",
       "meterName": "E4-2s v5 Spot",
       "productId": "DZH318Z096SR",

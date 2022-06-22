@@ -627,6 +627,7 @@
       "armRegionName": "southafricawest",
       "location": "ZA West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "04f3ed97-1ae2-5452-9567-e8adbdb20261",
       "meterName": "E8-4ds v4 Spot",
       "productId": "DZH318Z0CSHK",

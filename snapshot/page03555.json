@@ -833,6 +833,7 @@
       "armRegionName": "southindia",
       "location": "IN South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "dafe40dd-5bd4-55df-b4b2-5678c94fddcc",
       "meterName": "E96ds v5 Spot",
       "productId": "DZH318Z096SN",

@@ -2169,6 +2169,7 @@
       "armRegionName": "koreacentral",
       "location": "KR Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1aef0c49-d73f-5290-ac81-e89bf4a6d36d",
       "meterName": "E8-2ds v4 Spot",
       "productId": "DZH318Z0CSHK",

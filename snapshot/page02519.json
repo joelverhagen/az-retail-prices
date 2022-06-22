@@ -1914,6 +1914,7 @@
       "armRegionName": "westindia",
       "location": "IN West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "9b32378c-9bcc-55cf-bd7a-604b240a9272",
       "meterName": "E32-8s v5 Spot",
       "productId": "DZH318Z096SR",

@@ -1096,6 +1096,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "3fe16afb-7129-5c69-9804-79d8641c4e76",
       "meterName": "E32a v4/E32as v4 Spot",
       "productId": "DZH318Z0CM29",

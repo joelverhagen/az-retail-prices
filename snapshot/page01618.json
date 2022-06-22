@@ -1223,6 +1223,7 @@
       "armRegionName": "usgovtexas",
       "location": "US Gov TX",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "6419c87f-c6e0-5536-8a7d-df047f6fd9fc",
       "meterName": "E48s v3 Spot",
       "productId": "DZH318Z0BQ4R",

@@ -2220,6 +2220,7 @@
       "armRegionName": "southcentralus",
       "location": "US South Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "9d66a63d-364f-5c4f-a71f-2b880712df39",
       "meterName": "E96as v5 Spot",
       "productId": "DZH318Z093WZ",

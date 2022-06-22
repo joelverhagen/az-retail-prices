@@ -725,6 +725,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b2a05361-44cd-5d12-83b6-920f87e0f960",
       "meterName": "E32-16s v5 Spot",
       "productId": "DZH318Z096SR",

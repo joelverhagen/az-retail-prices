@@ -387,6 +387,7 @@
       "armRegionName": "koreasouth",
       "location": "KR South",
       "effectiveStartDate": "2022-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "de769603-a678-5206-b25c-2326e7fdddd2",
       "meterName": "E2ds v4 Spot",
       "productId": "DZH318Z0CSHK",

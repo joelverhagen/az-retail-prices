@@ -2111,6 +2111,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "526655a0-7bf8-5077-a9e3-d116bd4486fa",
       "meterName": "E32-16s v5 Spot",
       "productId": "DZH318Z096SR",

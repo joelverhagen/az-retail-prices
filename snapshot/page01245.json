@@ -518,6 +518,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "4ce9e787-60bf-5b51-a385-511ae219f919",
       "meterName": "E96-48as v5 Spot",
       "productId": "DZH318Z093XK",

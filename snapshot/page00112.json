@@ -571,6 +571,7 @@
       "armRegionName": "uaecentral",
       "location": "AE Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "071b4200-ed6d-5db3-a54f-dee313e32a2f",
       "meterName": "E32-8ds v4 Spot",
       "productId": "DZH318Z0CSHK",

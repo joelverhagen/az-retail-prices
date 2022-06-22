@@ -2143,6 +2143,7 @@
       "armRegionName": "koreasouth",
       "location": "KR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "f89a70c1-de7d-5fed-bc87-d52047e9d925",
       "meterName": "E4d v5 Spot",
       "productId": "DZH318Z08M9R",

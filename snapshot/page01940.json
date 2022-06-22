@@ -681,6 +681,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "778b481e-c500-53f7-98d2-881b5917b503",
       "meterName": "E16-4s v4 Spot",
       "productId": "DZH318Z0CSHL",

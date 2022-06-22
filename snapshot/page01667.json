@@ -876,6 +876,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "6716c1c4-336c-5635-8fdf-e89f64d17e4f",
       "meterName": "E64i v3/E64is v3 Spot",
       "productId": "DZH318Z0BQ4L",

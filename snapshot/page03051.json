@@ -975,6 +975,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "bc010eb9-ac69-599f-970a-6b601f139af2",
       "meterName": "E20 v3/E20s v3 Spot",
       "productId": "DZH318Z0BQ4L",

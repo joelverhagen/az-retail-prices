@@ -341,6 +341,7 @@
       "armRegionName": "usgovarizona",
       "location": "US Gov AZ",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5670ad26-42a9-527a-83b1-abbf6eb554d7",
       "meterName": "E64-32ds v4 Spot",
       "productId": "DZH318Z0CSHK",

@@ -759,6 +759,7 @@
       "armRegionName": "ukwest",
       "location": "UK West",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "0f5225e7-04b4-5e69-80c6-19e3d0b34922",
       "meterName": "E96ias v5 Spot",
       "productId": "DZH318Z093WZ",

@@ -1357,6 +1357,7 @@
       "armRegionName": "brazilsouth",
       "location": "BR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "4c8040f0-3272-5905-8650-3f8812f078d7",
       "meterName": "E32-16s v4 Spot",
       "productId": "DZH318Z0CSHL",

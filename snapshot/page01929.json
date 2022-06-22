@@ -827,7 +827,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
-      "effectiveEndDate": "2022-07-31T23:59:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "76c827b1-c473-5a91-976b-31bfd34cea21",
       "meterName": "E32 v3/E32s v3 Spot",
       "productId": "DZH318Z0BQ4L",

@@ -33,6 +33,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "a287af5f-33b9-5871-817d-b9d8c4ead8b4",
       "meterName": "E64s v3 Spot",
       "productId": "DZH318Z0BQ4R",

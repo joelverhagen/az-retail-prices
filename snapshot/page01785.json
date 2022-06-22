@@ -344,6 +344,7 @@
       "armRegionName": "switzerlandnorth",
       "location": "CH North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "6e4c5354-9120-539a-986b-4967f7927fe1",
       "meterName": "E20 v3/E20s v3 Spot",
       "productId": "DZH318Z0BQ4L",

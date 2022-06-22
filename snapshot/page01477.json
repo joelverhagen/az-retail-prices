@@ -2130,6 +2130,7 @@
       "armRegionName": "eastus2",
       "location": "US East 2",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5b9d36d1-285d-55bb-a904-e015edf35f89",
       "meterName": "E32as v5 Spot",
       "productId": "DZH318Z093WZ",

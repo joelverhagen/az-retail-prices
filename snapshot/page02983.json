@@ -1716,6 +1716,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b847a6fe-ca58-5e77-af6d-248fd9692657",
       "meterName": "E64-16ds v5 Spot",
       "productId": "DZH318Z096SN",

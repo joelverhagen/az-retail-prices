@@ -786,6 +786,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "47e00585-6c14-51e8-8667-c2b00e3701c4",
       "meterName": "E16-4s v4 Spot",
       "productId": "DZH318Z0CSHL",

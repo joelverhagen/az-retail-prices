@@ -697,6 +697,7 @@
       "armRegionName": "japanwest",
       "location": "JA West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "dbae5b13-2624-5651-bb80-1e0767abd5e8",
       "meterName": "E48s v4 Spot",
       "productId": "DZH318Z0CSHL",

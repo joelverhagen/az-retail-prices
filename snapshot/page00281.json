@@ -2046,6 +2046,7 @@
       "armRegionName": "northeurope",
       "location": "EU North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "11352efa-0a2d-55ce-a6da-ce7a697b218f",
       "meterName": "E16-8s v4 Spot",
       "productId": "DZH318Z0CSHL",

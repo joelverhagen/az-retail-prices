@@ -299,6 +299,7 @@
       "armRegionName": "switzerlandwest",
       "location": "CH West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "9edeff79-c27e-516e-a208-bcc170bb9d1c",
       "meterName": "E104id v5 Spot",
       "productId": "DZH318Z08M9Q",

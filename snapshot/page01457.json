@@ -275,6 +275,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5a3d2ce2-4670-506a-bab2-9d216e6f4594",
       "meterName": "E48ds v5 Spot",
       "productId": "DZH318Z096SN",

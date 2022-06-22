@@ -1642,6 +1642,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "e0e6f0f4-ec39-5772-87b6-ec2d3a19e424",
       "meterName": "E8s v5 Spot",
       "productId": "DZH318Z096SR",

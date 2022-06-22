@@ -11,6 +11,7 @@
       "armRegionName": "northeurope",
       "location": "EU North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "4a21b34f-34ea-52fa-8d52-9b7827e21d3a",
       "meterName": "E64s v4 Spot",
       "productId": "DZH318Z0CSHL",

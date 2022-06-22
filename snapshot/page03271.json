@@ -1771,6 +1771,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c9e61dab-e74f-5094-9fa3-2a6af927fb89",
       "meterName": "E4d v5 Spot",
       "productId": "DZH318Z08M9R",

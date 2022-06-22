@@ -1708,6 +1708,7 @@
       "armRegionName": "koreacentral",
       "location": "KR Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "2393a4e0-6454-553b-9aec-d64c4a306d15",
       "meterName": "E96ds v5 Spot",
       "productId": "DZH318Z096SN",

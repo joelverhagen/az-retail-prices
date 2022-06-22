@@ -1425,6 +1425,7 @@
       "armRegionName": "japaneast",
       "location": "JA East",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "e29947e2-341c-5bcb-9c5b-8a2179216e10",
       "meterName": "E32as v5 Spot",
       "productId": "DZH318Z093WZ",

@@ -1770,6 +1770,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1f09d5e5-0b23-50b5-8879-14267dfeccbc",
       "meterName": "E8s v3 Spot",
       "productId": "DZH318Z0BQ4R",

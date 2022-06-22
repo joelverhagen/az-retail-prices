@@ -1432,6 +1432,7 @@
       "armRegionName": "southafricawest",
       "location": "ZA West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "908ea992-3d26-5f01-a369-61f4c10077b2",
       "meterName": "E64s v3 Spot",
       "productId": "DZH318Z0BQ4R",

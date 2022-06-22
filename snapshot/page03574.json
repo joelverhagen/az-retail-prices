@@ -1271,6 +1271,7 @@
       "armRegionName": "westus2",
       "location": "US West 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "dc2778af-adc6-5ec3-8314-02ad9fe174df",
       "meterName": "E64-32s v4 Spot",
       "productId": "DZH318Z0CSHL",

@@ -1324,6 +1324,7 @@
       "armRegionName": "japaneast",
       "location": "JA East",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "af1be56a-126e-5dc6-b0e4-e35a8f2face3",
       "meterName": "E96-24as v5 Spot",
       "productId": "DZH318Z093WZ",

@@ -1445,6 +1445,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "42e83f3f-cd2c-5a94-a957-9cbcfca45f09",
       "meterName": "E2d v5 Spot",
       "productId": "DZH318Z08M9R",

@@ -2214,6 +2214,7 @@
       "armRegionName": "koreasouth",
       "location": "KR South",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "a42ec682-dc15-5b9e-b031-aec2a1fb7457",
       "meterName": "E20s v4 Spot",
       "productId": "DZH318Z0CSHC",

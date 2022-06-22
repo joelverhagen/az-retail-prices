@@ -1305,6 +1305,7 @@
       "armRegionName": "westcentralus",
       "location": "US West Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "8f7e45bd-8f8a-5e77-8e55-63404112001f",
       "meterName": "E16-8ds v4 Spot",
       "productId": "DZH318Z0CSHK",

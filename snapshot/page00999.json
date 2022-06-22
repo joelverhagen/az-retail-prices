@@ -1867,6 +1867,7 @@
       "armRegionName": "centralus",
       "location": "US Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "3db1105f-8c76-5d46-82e2-3c2ff54e07f2",
       "meterName": "E32-16ds v4 Spot",
       "productId": "DZH318Z0CSHK",

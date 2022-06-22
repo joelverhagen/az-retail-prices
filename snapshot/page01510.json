@@ -2199,6 +2199,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5d7be131-eaab-5b25-8927-6520b8483c6c",
       "meterName": "E104ids v5 Spot",
       "productId": "DZH318Z096SL",

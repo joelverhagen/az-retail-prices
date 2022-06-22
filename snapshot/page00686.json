@@ -1247,6 +1247,7 @@
       "armRegionName": "australiaeast",
       "location": "AU East",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "2a41e145-8f98-5422-9c66-d4b88a0d90ad",
       "meterName": "E64-32as v5 Spot",
       "productId": "DZH318Z093WZ",

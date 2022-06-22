@@ -1865,6 +1865,7 @@
       "armRegionName": "centralindia",
       "location": "IN Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b13272ca-7f4a-537b-967b-f8cf4785e431",
       "meterName": "E4-2s v5 Spot",
       "productId": "DZH318Z096SR",

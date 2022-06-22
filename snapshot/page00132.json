@@ -1312,6 +1312,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-04-20T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "08758bf8-06ca-5d56-9975-58effd4bf8d5",
       "meterName": "E16s",
       "productId": "DZH318Z0CCGL",

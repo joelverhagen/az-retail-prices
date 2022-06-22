@@ -1856,6 +1856,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c1db2cef-42c2-51c4-b2a1-2ddb7fc9ee7e",
       "meterName": "E96-24as_v4 Spot",
       "productId": "DZH318Z0CM2D",

@@ -193,6 +193,7 @@
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "8a0c16bb-ac81-569b-899e-a273acbd70d9",
       "meterName": "E20ds v5 Spot",
       "productId": "DZH318Z096SN",

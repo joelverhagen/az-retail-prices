@@ -1705,6 +1705,7 @@
       "armRegionName": "southcentralus",
       "location": "US South Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "ed803196-ef21-56d4-ab20-fb909e897b7d",
       "meterName": "E16-8as v5 Spot",
       "productId": "DZH318Z093WZ",

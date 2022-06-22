@@ -1683,6 +1683,7 @@
       "armRegionName": "centralindia",
       "location": "IN Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "0d6d00f8-9307-5dc1-a3f5-e083903faff8",
       "meterName": "E64d v5 Spot",
       "productId": "DZH318Z08M9R",

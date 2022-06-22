@@ -461,6 +461,7 @@
       "armRegionName": "usgovtexas",
       "location": "US Gov TX",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c4cac627-5588-5098-b90f-c8b263a3ce69",
       "meterName": "E32s v4 Spot",
       "productId": "DZH318Z0CSHC",

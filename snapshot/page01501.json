@@ -1209,6 +1209,7 @@
       "armRegionName": "usgovvirginia",
       "location": "US Gov Virginia",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5cff9ae9-a47b-5c8c-b85e-24bce4f36ab7",
       "meterName": "E4ds v4 Spot",
       "productId": "DZH318Z0CSHB",

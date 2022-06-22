@@ -828,6 +828,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b4a2ce02-8ad9-53e5-ba5e-8722f78faea1",
       "meterName": "E20a v4/E20as v4 Spot",
       "productId": "DZH318Z0CM29",

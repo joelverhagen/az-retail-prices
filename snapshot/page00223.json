@@ -1566,6 +1566,7 @@
       "armRegionName": "eastus2",
       "location": "US East 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "0e5730db-8860-5b65-a2db-1b8232a838ab",
       "meterName": "E4-2s v4 Spot",
       "productId": "DZH318Z0CSHL",

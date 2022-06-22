@@ -386,6 +386,7 @@
       "armRegionName": "norwayeast",
       "location": "NO East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "719d9355-be88-5575-b768-28242399cf0e",
       "meterName": "E96-24ds v5 Spot",
       "productId": "DZH318Z096SN",

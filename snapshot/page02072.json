@@ -1665,6 +1665,7 @@
       "armRegionName": "germanynorth",
       "location": "DE North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "7fe0e09f-84ba-569e-b52c-36624421cce5",
       "meterName": "E80ids v4 Spot",
       "productId": "DZH318Z0CSHK",

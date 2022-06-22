@@ -1914,6 +1914,7 @@
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "47a86e16-d6bc-5e72-8285-676ead760b93",
       "meterName": "E96s v5 Spot",
       "productId": "DZH318Z096SR",

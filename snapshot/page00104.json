@@ -2079,6 +2079,7 @@
       "armRegionName": "switzerlandwest",
       "location": "CH West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "069f7818-1d74-58b9-a496-d6269b10aae3",
       "meterName": "E4-2s v3 Spot",
       "productId": "DZH318Z0BQ4R",

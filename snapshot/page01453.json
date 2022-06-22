@@ -1303,6 +1303,7 @@
       "armRegionName": "norwayeast",
       "location": "NO East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "5a04c4d1-2dc6-571d-97c0-c090c8f199f2",
       "meterName": "E48s v4 Spot",
       "productId": "DZH318Z0CSHL",

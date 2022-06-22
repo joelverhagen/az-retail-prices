@@ -169,6 +169,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "2c2c1a0f-fdf1-57a7-827b-e873f1fed944",
       "meterName": "E32ds v5 Spot",
       "productId": "DZH318Z096SL",

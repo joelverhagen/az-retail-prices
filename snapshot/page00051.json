@@ -812,6 +812,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "034f1f48-28fa-5b19-af2d-f29cf3de6571",
       "meterName": "E64-32s v3 Spot",
       "productId": "DZH318Z0BQ4R",

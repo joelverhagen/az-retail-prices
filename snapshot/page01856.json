@@ -525,6 +525,7 @@
       "armRegionName": "centralindia",
       "location": "IN Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "72f05e42-2b2a-5f26-8ab9-1e369a716b6a",
       "meterName": "E48 v3/E48s v3 Spot",
       "productId": "DZH318Z0BQ4L",

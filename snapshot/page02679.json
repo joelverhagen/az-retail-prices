@@ -326,6 +326,7 @@
       "armRegionName": "westcentralus",
       "location": "US West Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "a53ee9dd-95b0-5a34-a886-28b5eecd46ac",
       "meterName": "E64s v5 Spot",
       "productId": "DZH318Z096SR",

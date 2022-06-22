@@ -482,6 +482,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c15df61d-e6a7-51da-b27c-633d6b9ea04b",
       "meterName": "E104ids v5 Spot",
       "productId": "DZH318Z096SL",

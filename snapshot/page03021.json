@@ -1508,6 +1508,7 @@
       "armRegionName": "eastasia",
       "location": "AP East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "ba60e527-8580-5a10-a0af-a312c80849cb",
       "meterName": "E96-24s v5 Spot",
       "productId": "DZH318Z096T1",

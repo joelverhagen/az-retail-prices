@@ -1988,6 +1988,7 @@
       "armRegionName": "switzerlandwest",
       "location": "CH West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "25d2d0e9-de46-52b7-afd8-6d825c6eb4a5",
       "meterName": "E96d v5 Spot",
       "productId": "DZH318Z08M9Q",

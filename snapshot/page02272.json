@@ -1290,6 +1290,7 @@
       "armRegionName": "southcentralus",
       "location": "US South Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "8bf623db-b3a3-5eb6-9ccb-32cb71b92c12",
       "meterName": "E64-32s v4 Spot",
       "productId": "DZH318Z0CSHL",

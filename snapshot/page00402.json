@@ -1942,6 +1942,7 @@
       "armRegionName": "germanywestcentral",
       "location": "DE West Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "18922b15-6a39-5022-afef-3abfc6956ebe",
       "meterName": "E8as v5 Spot",
       "productId": "DZH318Z093WZ",

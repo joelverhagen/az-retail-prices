@@ -1463,6 +1463,7 @@
       "armRegionName": "japanwest",
       "location": "JA West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "74adf447-2179-594a-ac5f-c5d04fe55bf3",
       "meterName": "E96-48ds v5 Spot",
       "productId": "DZH318Z096SN",

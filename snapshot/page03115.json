@@ -1344,6 +1344,7 @@
       "armRegionName": "westus2",
       "location": "US West 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c02adc70-d509-5abd-81ca-ec4896b92c00",
       "meterName": "E48ds v4 Spot",
       "productId": "DZH318Z0CSHK",

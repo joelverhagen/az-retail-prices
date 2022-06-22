@@ -1535,6 +1535,7 @@
       "armRegionName": "eastasia",
       "location": "AP East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "3bd39d7a-93fc-52d6-b9e8-3db10774d4cb",
       "meterName": "E16d v5 Spot",
       "productId": "DZH318Z08M9R",

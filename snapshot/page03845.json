@@ -699,6 +699,7 @@
       "armRegionName": "westus2",
       "location": "US West 2",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "ed1a7da6-3026-5f5c-afc8-5944bb830059",
       "meterName": "E32-16as v5 Spot",
       "productId": "DZH318Z093WZ",

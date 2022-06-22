@@ -278,6 +278,7 @@
       "armRegionName": "switzerlandnorth",
       "location": "CH North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b5520c7a-0bd4-5faa-b6a3-f80e4c377f42",
       "meterName": "E64i v3/E64is v3 Spot",
       "productId": "DZH318Z0BQ4L",

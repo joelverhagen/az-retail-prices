@@ -1248,6 +1248,7 @@
       "armRegionName": "germanywestcentral",
       "location": "DE West Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "3c10e94e-c59d-51e0-af31-e90523ed161b",
       "meterName": "E64-32s v5 Spot",
       "productId": "DZH318Z096SR",

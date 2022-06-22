@@ -1191,6 +1191,7 @@
       "armRegionName": "canadacentral",
       "location": "CA Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "3a9ef11a-d5b4-5c84-b91f-4def1c58f3f6",
       "meterName": "E48s v4 Spot",
       "productId": "DZH318Z0CSHL",

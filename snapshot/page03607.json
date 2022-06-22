@@ -478,6 +478,7 @@
       "armRegionName": "westindia",
       "location": "IN West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "de249166-ec71-5599-9d18-a70288cdd6b3",
       "meterName": "E2d v4 Spot",
       "productId": "DZH318Z0D1L5",

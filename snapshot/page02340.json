@@ -1972,6 +1972,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "903e4eac-51d9-5b5c-a21f-683198193c24",
       "meterName": "E8-2as v5 Spot",
       "productId": "DZH318Z093XK",

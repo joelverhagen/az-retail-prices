@@ -1183,6 +1183,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "57ca16f7-5d68-548d-840e-bb79a121a377",
       "meterName": "E4ds v5 Spot",
       "productId": "DZH318Z096SL",

@@ -1239,6 +1239,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "cdefa423-59bf-58a8-b5c4-191a91567107",
       "meterName": "E48d v5 Spot",
       "productId": "DZH318Z08M9R",

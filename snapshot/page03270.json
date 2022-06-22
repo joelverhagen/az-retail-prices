@@ -1817,6 +1817,7 @@
       "armRegionName": "uaecentral",
       "location": "AE Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c9e20e82-5dba-5ac3-ba58-ca5840301a95",
       "meterName": "E104is v5 Spot",
       "productId": "DZH318Z096T1",

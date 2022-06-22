@@ -123,6 +123,7 @@
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2022-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "7c8335a3-efc8-518e-ac54-be9062670ec0",
       "meterName": "E8-2as v5 Spot",
       "productId": "DZH318Z093WZ",

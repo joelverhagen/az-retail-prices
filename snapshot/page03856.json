@@ -455,6 +455,7 @@
       "armRegionName": "usgovvirginia",
       "location": "US Gov Virginia",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "eda05e97-3f33-5c8e-b244-42bc9457314b",
       "meterName": "E64-16s v4 Spot",
       "productId": "DZH318Z0CSHL",

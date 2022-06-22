@@ -989,6 +989,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b47b2e5e-2093-530d-8a6f-4988f7ee7417",
       "meterName": "E64 v3/E64s v3 Spot",
       "productId": "DZH318Z0BQ4L",

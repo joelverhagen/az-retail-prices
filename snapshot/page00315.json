@@ -1588,6 +1588,7 @@
       "armRegionName": "uksouth",
       "location": "UK South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "1306aea9-e93b-5850-af74-f09b5726def9",
       "meterName": "E16ds v5 Spot",
       "productId": "DZH318Z096SN",

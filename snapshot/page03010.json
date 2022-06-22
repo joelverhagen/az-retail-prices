@@ -1031,6 +1031,7 @@
       "armRegionName": "eastasia",
       "location": "AP East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b9d775b3-db09-54a3-b2d7-4e687aab7e2d",
       "meterName": "E80is v4 Spot",
       "productId": "DZH318Z0CSHL",

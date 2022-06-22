@@ -235,6 +235,7 @@
       "armRegionName": "australiaeast",
       "location": "AU East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "93d1b9f8-8ea9-5e1e-83e9-0dfcd8accf6d",
       "meterName": "E4ds v5 Spot",
       "productId": "DZH318Z096SL",

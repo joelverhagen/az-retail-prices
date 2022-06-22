@@ -882,6 +882,7 @@
       "armRegionName": "australiacentral",
       "location": "AU Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "f73605c9-eeff-558b-acb2-d714b5028a8e",
       "meterName": "E2s v4 Spot",
       "productId": "DZH318Z0CSHL",

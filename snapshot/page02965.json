@@ -1862,6 +1862,7 @@
       "armRegionName": "eastasia",
       "location": "AP East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b73c5ccd-cc9c-53d0-91eb-9cddaacb2549",
       "meterName": "E8-4ds v5 Spot",
       "productId": "DZH318Z096SL",

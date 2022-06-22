@@ -799,6 +799,7 @@
       "armRegionName": "westeurope",
       "location": "EU West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "d84bdf38-d1d4-5981-9fd5-96a81c9c92af",
       "meterName": "E96s v5 Spot",
       "productId": "DZH318Z096SR",

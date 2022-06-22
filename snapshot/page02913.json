@@ -2185,6 +2185,7 @@
       "armRegionName": "francesouth",
       "location": "FR South",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "b3dd9a06-08bf-560e-aba9-5d30b86ba935",
       "meterName": "E8d v5 Spot",
       "productId": "DZH318Z08M9R",

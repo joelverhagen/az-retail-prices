@@ -562,6 +562,7 @@
       "armRegionName": "uaenorth",
       "location": "AE North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c6093140-1de7-5f13-82ad-b67965884c78",
       "meterName": "E4ds v4 Spot",
       "productId": "DZH318Z0CSHK",

@@ -716,6 +716,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "0f46d7d6-78f0-5879-9023-84c03a2f6770",
       "meterName": "E16s v3 Spot",
       "productId": "DZH318Z0BQ4R",

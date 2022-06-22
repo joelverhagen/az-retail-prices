@@ -1123,6 +1123,7 @@
       "armRegionName": "usgovtexas",
       "location": "US Gov TX",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-06-30T23:59:00Z",
       "meterId": "c23526cb-a34c-57c9-8758-4165d043b079",
       "meterName": "E2d v4 Spot",
       "productId": "DZH318Z0D1L5",
