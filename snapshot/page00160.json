@@ -33,6 +33,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-11-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "09d36156-24f9-5eb5-99b1-6c0fd06124f2",
       "meterName": "Standard vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

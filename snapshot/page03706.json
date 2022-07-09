@@ -1291,6 +1291,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2021-11-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "da628bd2-3912-5bd8-b940-671ae3cf4567",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

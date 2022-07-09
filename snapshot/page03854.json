@@ -2178,6 +2178,7 @@
       "armRegionName": "westus3",
       "location": "US West 3",
       "effectiveStartDate": "2022-07-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "e3821012-f536-5855-ad53-0bc75a92b074",
       "meterName": "Standard Node",
       "productId": "DZH318Z0HHGR",
