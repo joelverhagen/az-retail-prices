@@ -1363,6 +1363,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2020-08-25T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "a2ba8659-4392-5b07-8f3f-df2fda13142c",
       "meterName": "LRS List and Create Container Operations",
       "productId": "DZH318Z0BZ18",

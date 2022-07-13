@@ -1228,6 +1228,7 @@
       "armRegionName": "qatarcentral",
       "location": "QA Central",
       "effectiveStartDate": "2022-07-05T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "f18022c3-33db-538c-a5dd-2eb08a3f16cd",
       "meterName": "LRS Data Stored",
       "productId": "DZH318Z0BZ18",

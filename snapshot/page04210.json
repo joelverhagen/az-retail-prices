@@ -1893,6 +1893,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2020-08-25T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "f8dab2ee-2dc1-5ca6-9732-f2f0536ae93b",
       "meterName": "LRS Data Stored",
       "productId": "DZH318Z0BZ18",

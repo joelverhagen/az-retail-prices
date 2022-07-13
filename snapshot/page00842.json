@@ -343,6 +343,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2020-08-25T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "3185b8b7-9635-527f-9979-07fd9b60d7e2",
       "meterName": "LRS Read Operations",
       "productId": "DZH318Z0BZ18",

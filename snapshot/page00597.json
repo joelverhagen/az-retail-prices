@@ -1675,6 +1675,7 @@
       "armRegionName": "qatarcentral",
       "location": "QA Central",
       "effectiveStartDate": "2022-07-05T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "2324aec0-17dd-5d27-9ad5-81d163a5f02c",
       "meterName": "LRS Write Operations",
       "productId": "DZH318Z0BZ18",

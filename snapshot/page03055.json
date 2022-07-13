@@ -655,6 +655,7 @@
       "armRegionName": "brazilsoutheast",
       "location": "BR Southeast",
       "effectiveStartDate": "2020-08-25T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "b4953dbf-99a2-51d3-ae19-ed3a1729b372",
       "meterName": "LRS Write Operations",
       "productId": "DZH318Z0BZ18",

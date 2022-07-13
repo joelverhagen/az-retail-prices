@@ -1938,6 +1938,7 @@
       "armRegionName": "qatarcentral",
       "location": "QA Central",
       "effectiveStartDate": "2022-07-05T00:00:00Z",
+      "effectiveEndDate": "2022-07-31T23:59:00Z",
       "meterId": "c5e70c21-076d-5e9a-b1d8-e5fbc7a77988",
       "meterName": "ZRS List and Create Container Operations",
       "productId": "DZH318Z0BZ18",
