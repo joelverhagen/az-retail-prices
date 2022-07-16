@@ -1629,6 +1629,7 @@
       "armRegionName": "koreacentral",
       "location": "KR Central",
       "effectiveStartDate": "2021-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "5bd116bd-6763-52f6-b88f-d8257b1ac494",
       "meterName": "GPU Powered G6",
       "productId": "DZH318Z094VT",

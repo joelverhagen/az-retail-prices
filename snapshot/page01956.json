@@ -301,6 +301,7 @@
       "armRegionName": "koreacentral",
       "location": "KR Central",
       "effectiveStartDate": "2021-05-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "73c33638-9edb-5d72-8977-d66d2b4f9622",
       "meterName": "Build Optimized B64",
       "productId": "DZH318Z094VT",
