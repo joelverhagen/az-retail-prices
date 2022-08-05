@@ -1803,6 +1803,7 @@
       "armRegionName": "",
       "location": "",
       "effectiveStartDate": "2018-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "6dfb482b-23ea-487f-810c-e66360f025de",
       "meterName": "5\u002B vCPU VM License",
       "productId": "DZH318Z0BJRB",
