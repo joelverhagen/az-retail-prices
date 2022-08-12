@@ -116,8 +116,8 @@
     {
       "currencyCode": "USD",
       "tierMinimumUnits": 0.0,
-      "retailPrice": 0.0585,
-      "unitPrice": 0.0585,
+      "retailPrice": 0.0583,
+      "unitPrice": 0.0583,
       "armRegionName": "attatlanta1",
       "location": "ATT Atlanta 1",
       "effectiveStartDate": "2022-04-01T00:00:00Z",

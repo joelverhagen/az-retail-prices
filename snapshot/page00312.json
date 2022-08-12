@@ -1827,6 +1827,7 @@
       "armRegionName": "northeurope",
       "location": "EU North",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "12146a76-66a1-55f0-9ef5-e60d4e18fc67",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

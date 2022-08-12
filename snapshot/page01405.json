@@ -2159,6 +2159,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "53bf0da6-eafc-5637-8af9-04579410b919",
       "meterName": "Enterprise vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

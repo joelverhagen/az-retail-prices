@@ -277,6 +277,7 @@
       "armRegionName": "westeurope",
       "location": "EU West",
       "effectiveStartDate": "2021-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "76c31d32-aeab-4b65-a1a7-5df9109a1dfe",
       "meterName": "Standard vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

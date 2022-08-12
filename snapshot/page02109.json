@@ -2017,6 +2017,7 @@
       "armRegionName": "francecentral",
       "location": "FR Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "7ce6914c-60db-5be4-980a-f103bf0a1849",
       "meterName": "Enterprise Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

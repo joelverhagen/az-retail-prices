@@ -2203,6 +2203,7 @@
       "armRegionName": "australiaeast",
       "location": "AU East",
       "effectiveStartDate": "2021-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "82a39063-402b-5454-8567-fe5d807e19a7",
       "meterName": "Standard vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

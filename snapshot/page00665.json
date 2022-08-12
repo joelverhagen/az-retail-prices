@@ -415,7 +415,7 @@
       "meterName": "Backup Storage LRS Data Stored",
       "productId": "DZH318Z0DCQ5",
       "skuId": "DZH318Z0DCQ5/0014",
-      "productName": "Azure Database for MySQL Flexible Server Backup Storage",
+      "productName": "Az DB for MySQL Flex Svr Backup Storage",
       "skuName": "Backup Storage LRS",
       "serviceName": "Azure Database for MySQL",
       "serviceId": "DZH317NR0P99",

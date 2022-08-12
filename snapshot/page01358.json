@@ -1997,6 +1997,7 @@
       "armRegionName": "centralus",
       "location": "US Central",
       "effectiveStartDate": "2021-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "50ab3f2d-10f7-5bdc-b0d2-b1279c1bbd83",
       "meterName": "Standard vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

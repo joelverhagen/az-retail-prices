@@ -517,6 +517,7 @@
       "armRegionName": "westeurope",
       "location": "EU West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "2cc0d13f-e9c4-5029-86cf-563a57441cab",
       "meterName": "Enterprise Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

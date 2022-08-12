@@ -2070,6 +2070,7 @@
       "armRegionName": "southeastasia",
       "location": "AP Southeast",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "66c6aba3-afb9-475d-81d8-494bb0d69f88",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

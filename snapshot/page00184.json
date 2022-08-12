@@ -476,6 +476,7 @@
       "armRegionName": "japaneast",
       "location": "JA East",
       "effectiveStartDate": "2021-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "0b5bcc12-ca29-5b2e-999e-ff4acd7f3339",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

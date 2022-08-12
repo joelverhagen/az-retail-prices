@@ -1672,6 +1672,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "56edacf8-0681-579a-8606-e082d1653c23",
       "meterName": "Enterprise Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

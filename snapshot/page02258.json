@@ -874,6 +874,7 @@
       "armRegionName": "canadaeast",
       "location": "CA East",
       "effectiveStartDate": "2022-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "857b42f9-f166-5f58-84ad-e50421c86108",
       "meterName": "Enterprise Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

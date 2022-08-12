@@ -1161,6 +1161,7 @@
       "armRegionName": "australiaeast",
       "location": "AU East",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "6edff095-3886-502e-9616-0852147d293b",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

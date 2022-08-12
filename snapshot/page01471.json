@@ -2183,6 +2183,7 @@
       "armRegionName": "westeurope",
       "location": "EU West",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "575cb8b1-7840-5e52-968a-f8053b6a564c",
       "meterName": "Enterprise Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

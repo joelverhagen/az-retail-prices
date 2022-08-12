@@ -608,6 +608,7 @@
       "armRegionName": "switzerlandnorth",
       "location": "CH North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "798cb246-a81a-5bd3-9ff9-b6f89f239172",
       "meterName": "Enterprise Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

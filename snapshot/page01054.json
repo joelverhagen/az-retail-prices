@@ -99,6 +99,7 @@
       "armRegionName": "germanywestcentral",
       "location": "DE West Central",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "3e637ae5-e9c8-571f-9594-fe7cdf582d21",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

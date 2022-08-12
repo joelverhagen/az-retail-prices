@@ -1749,6 +1749,7 @@
       "armRegionName": "eastus",
       "location": "US East",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "1fa8023d-12e6-43e8-b2fa-eebdb68fa72d",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

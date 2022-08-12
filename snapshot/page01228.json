@@ -2073,6 +2073,7 @@
       "armRegionName": "japaneast",
       "location": "JA East",
       "effectiveStartDate": "2021-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "488ede53-68ee-5e05-8a21-04eb47560114",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

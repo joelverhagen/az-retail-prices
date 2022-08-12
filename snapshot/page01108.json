@@ -2089,6 +2089,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "4165eeb2-19a5-5749-9a5a-285365e6a582",
       "meterName": "Enterprise Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

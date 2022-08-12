@@ -1687,6 +1687,7 @@
       "armRegionName": "centralindia",
       "location": "IN Central",
       "effectiveStartDate": "2021-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "18aca0ba-32ca-5743-b0d7-6749b167714a",
       "meterName": "Standard vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

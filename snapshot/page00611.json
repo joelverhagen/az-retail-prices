@@ -653,6 +653,7 @@
       "armRegionName": "eastus2",
       "location": "US East 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "24268946-98ce-5b9c-8b21-877ec215e5d9",
       "meterName": "Enterprise vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

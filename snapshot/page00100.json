@@ -791,6 +791,7 @@
       "armRegionName": "centralus",
       "location": "US Central",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "0624d029-15a0-5f6c-8253-ca5453028c6d",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

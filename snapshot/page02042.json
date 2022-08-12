@@ -2092,6 +2092,7 @@
       "armRegionName": "francecentral",
       "location": "FR Central",
       "effectiveStartDate": "2021-11-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "78f845c9-2be1-5f15-bc10-8105706cece7",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

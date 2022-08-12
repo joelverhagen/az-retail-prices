@@ -719,6 +719,7 @@
       "armRegionName": "southafricanorth",
       "location": "ZA North",
       "effectiveStartDate": "2021-04-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "831f8dab-6671-5778-b2ab-9a162a7e9fa5",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

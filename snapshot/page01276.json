@@ -2093,6 +2093,7 @@
       "armRegionName": "eastus2",
       "location": "US East 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "4bd5e6ef-e0ae-536d-83a7-641775e68a46",
       "meterName": "Enterprise Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

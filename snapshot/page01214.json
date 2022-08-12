@@ -1290,6 +1290,7 @@
       "armRegionName": "canadaeast",
       "location": "CA East",
       "effectiveStartDate": "2022-08-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "47c98b27-a865-53ec-9c30-11b3804dfc57",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

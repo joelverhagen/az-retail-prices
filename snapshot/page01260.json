@@ -77,6 +77,7 @@
       "armRegionName": "centralindia",
       "location": "IN Central",
       "effectiveStartDate": "2021-01-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "4aa14d11-b277-58ef-be85-e046affd4bcf",
       "meterName": "Standard Overage Memory Duration",
       "productId": "DZH318Z0CGV9",

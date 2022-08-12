@@ -1717,6 +1717,7 @@
       "armRegionName": "eastus",
       "location": "US East",
       "effectiveStartDate": "2020-09-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "7f3b5fad-7678-4987-9e2b-dd904422e210",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

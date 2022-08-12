@@ -55,6 +55,7 @@
       "armRegionName": "westus2",
       "location": "US West 2",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "09f3961b-77b6-56b0-8dea-d382016a2e60",
       "meterName": "Enterprise vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

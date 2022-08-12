@@ -671,6 +671,7 @@
       "armRegionName": "northcentralus",
       "location": "US North Central",
       "effectiveStartDate": "2020-12-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "48eeefa3-a924-54c5-96ed-a10a9514f88a",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

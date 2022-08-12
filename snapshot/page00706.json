@@ -1441,6 +1441,7 @@
       "armRegionName": "eastasia",
       "location": "AP East",
       "effectiveStartDate": "2022-06-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "29bb64a3-37f8-58ea-809a-e844bfee34c0",
       "meterName": "Enterprise vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

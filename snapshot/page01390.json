@@ -11,6 +11,7 @@
       "armRegionName": "japaneast",
       "location": "JA East",
       "effectiveStartDate": "2022-07-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "52c54ea0-02bb-59d3-914b-b30d12c7e9b7",
       "meterName": "Enterprise vCPU and Memory Group Duration",
       "productId": "DZH318Z0CGV9",

@@ -2083,6 +2083,7 @@
       "armRegionName": "koreacentral",
       "location": "KR Central",
       "effectiveStartDate": "2021-01-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "542f5c87-d257-5285-8328-3964393e2802",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",

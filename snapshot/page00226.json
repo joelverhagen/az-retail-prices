@@ -1654,6 +1654,7 @@
       "armRegionName": "westus",
       "location": "US West",
       "effectiveStartDate": "2020-12-01T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "0deb1e7f-56b0-52c1-b45e-6d14dd5af4e4",
       "meterName": "Standard Overage vCPU Duration",
       "productId": "DZH318Z0CGV9",
