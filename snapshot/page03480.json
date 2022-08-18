@@ -944,6 +944,7 @@
       "armRegionName": "qatarcentral",
       "location": "QA Central",
       "effectiveStartDate": "2022-07-05T00:00:00Z",
+      "effectiveEndDate": "2022-08-31T23:59:00Z",
       "meterId": "ce4f6441-88f4-584e-8493-e0167c6824c7",
       "meterName": "vCore",
       "productId": "DZH318Z0CGNC",
